@@ -1,0 +1,49 @@
+{
+  "name": "@patebryant/ptop",
+  "version": "0.1.0",
+  "description": "A native Rust terminal system monitor inspired by vtop",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patebry/ptop.git"
+  },
+  "homepage": "https://github.com/patebry/ptop#readme",
+  "bugs": "https://github.com/patebry/ptop/issues",
+  "bin": {
+    "ptop": "bin/ptop"
+  },
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "files": [
+    "bin/ptop",
+    "LICENSE",
+    "licenses/",
+    "README.md",
+    "docs/assets/ptop.png",
+    "docs/BENCHMARKING.md",
+    "docs/PERFORMANCE-2026-10-06.md",
+    "docs/benchmark-final-2026-10-06.jsonl",
+    "docs/PERFORMANCE-NPM-0.1.0.md",
+    "docs/benchmark-npm-0.1.0-2026-10-06.jsonl"
+  ],
+  "scripts": {
+    "prepack": "node scripts/prepare-package.mjs",
+    "test": "node --test scripts/package.test.mjs"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "keywords": [
+    "terminal",
+    "monitor",
+    "cpu",
+    "memory",
+    "rust",
+    "vtop"
+  ]
+}

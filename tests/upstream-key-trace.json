@@ -1,0 +1,466 @@
+{
+  "case": "0001-cpu-empty",
+  "theme": "parallax",
+  "cols": 100,
+  "rows": 24,
+  "parity": true,
+  "brand": "vtop",
+  "hostname": "mac.local",
+  "clock": "12:34:56 ",
+  "loadavg": [
+    1.23,
+    4.56,
+    7.89
+  ],
+  "cpu_values": [],
+  "cpu_scale": 1,
+  "cpu_initialized": true,
+  "cpu_value_label": 0,
+  "mem_values": [
+    30,
+    45,
+    60
+  ],
+  "mem_scale": 1,
+  "mem_initialized": true,
+  "mem_value_label": 60,
+  "procs": [
+    {
+      "Command": "p0",
+      "CPU %": "30",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p1",
+      "CPU %": "29",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p2",
+      "CPU %": "28",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p3",
+      "CPU %": "27",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p4",
+      "CPU %": "26",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p5",
+      "CPU %": "25",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p6",
+      "CPU %": "24",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p7",
+      "CPU %": "23",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p8",
+      "CPU %": "22",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p9",
+      "CPU %": "21",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p10",
+      "CPU %": "20",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p11",
+      "CPU %": "19",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p12",
+      "CPU %": "18",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p13",
+      "CPU %": "17",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p14",
+      "CPU %": "16",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p15",
+      "CPU %": "15",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p16",
+      "CPU %": "14",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p17",
+      "CPU %": "13",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p18",
+      "CPU %": "12",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p19",
+      "CPU %": "11",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p20",
+      "CPU %": "10",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p21",
+      "CPU %": "9",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p22",
+      "CPU %": "8",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p23",
+      "CPU %": "7",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p24",
+      "CPU %": "6",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p25",
+      "CPU %": "5",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p26",
+      "CPU %": "4",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p27",
+      "CPU %": "3",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p28",
+      "CPU %": "2",
+      "Memory %": "1.0",
+      "Count": 1
+    },
+    {
+      "Command": "p29",
+      "CPU %": "1",
+      "Memory %": "1.0",
+      "Count": 1
+    }
+  ],
+  "selected": 0,
+  "events": [
+    {
+      "key": {
+        "name": "g",
+        "shift": true
+      }
+    },
+    {
+      "key": {
+        "name": "k"
+      }
+    },
+    {
+      "key": {
+        "name": "h",
+        "shift": true
+      }
+    },
+    {
+      "key": {
+        "name": "m",
+        "shift": true
+      }
+    },
+    {
+      "advance": 199
+    },
+    {
+      "advance": 1
+    },
+    {
+      "key": {
+        "name": "l",
+        "shift": true
+      }
+    },
+    {
+      "key": {
+        "name": "d",
+        "ctrl": true
+      }
+    },
+    {
+      "key": {
+        "name": "j"
+      }
+    },
+    {
+      "key": {
+        "name": "home"
+      }
+    },
+    {
+      "key": {
+        "name": "end"
+      }
+    },
+    {
+      "key": {
+        "name": "g"
+      }
+    },
+    {
+      "key": {
+        "name": "up"
+      }
+    },
+    {
+      "key": {
+        "name": "j",
+        "shift": true
+      }
+    },
+    {
+      "key": {
+        "name": "f",
+        "ctrl": true
+      }
+    },
+    {
+      "key": {
+        "name": "b",
+        "ctrl": true
+      }
+    },
+    {
+      "key": {
+        "name": "u",
+        "ctrl": true
+      }
+    }
+  ],
+  "expected": [
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 0,
+      "scroll": 0,
+      "sort": "cpu",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 29,
+      "scroll": 23,
+      "sort": "cpu",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 28,
+      "scroll": 23,
+      "sort": "cpu",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 2,
+      "selected": 23,
+      "scroll": 23,
+      "sort": "cpu",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 2,
+      "selected": 26,
+      "scroll": 23,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 2,
+      "selected": 26,
+      "scroll": 23,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 2,
+      "selected": 0,
+      "scroll": 0,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 7,
+      "scroll": 1,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 10,
+      "scroll": 4,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 11,
+      "scroll": 5,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 11,
+      "scroll": 5,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 11,
+      "scroll": 5,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 0,
+      "scroll": 0,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 0,
+      "scroll": 0,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 1,
+      "scroll": 0,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 8,
+      "scroll": 2,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 1,
+      "scroll": 1,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    },
+    {
+      "position": -1,
+      "graphScale": 1,
+      "selected": 0,
+      "scroll": 1,
+      "sort": "mem",
+      "disableTableUpdate": false,
+      "upgradeNotice": false
+    }
+  ]
+}

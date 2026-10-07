@@ -1,0 +1,7 @@
+# Native RSS feasibility probe
+
+The proposed direct replacement for `ps -caxm -orss,comm` is rejected on this host. The independent C probe uses the same Apple ps `task_read_for_pid` and `TASK_BASIC_INFO` API. Of 897 enumerated processes, 890 had positive RSS from ps but denied native access. Even the disposable sleep child was denied (native status -1, RSS zero; ps RSS 1168 KiB). `result.json` records the measurement. The probe terminates no processes; the Python runner cleaned up only its own sleep child.
+
+Apple's signed ps has `com.apple.system-task-ports.read`; an ordinary unsigned clone does not inherit that access. Switching to `proc_pidinfo` is a different collection contract and is not accepted by this test. Keep the compatible ps sensor unless a separately validated equivalent collection method is available.
+
+Source references: [Apple ps tasks.c](https://raw.githubusercontent.com/apple-oss-distributions/adv_cmds/main/ps/tasks.c), [RSS formatting in print.c](https://raw.githubusercontent.com/apple-oss-distributions/adv_cmds/main/ps/print.c), [process inclusion in ps.c](https://raw.githubusercontent.com/apple-oss-distributions/adv_cmds/main/ps/ps.c). RSS is truncated to KiB per process; `-ax` enumerates all processes except PID 0; `-m` changes sorting. The short-lived ps process observes its own memory, so even an otherwise equivalent replacement would change that contribution.

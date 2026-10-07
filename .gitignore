@@ -1,0 +1,8 @@
+/target/
+/dist/
+/bin/ptop
+/node_modules/
+*.tgz
+__pycache__/
+*.py[cod]
+.DS_Store

@@ -1,0 +1,44 @@
+{
+ "case": "0028-table-long-commands",
+ "theme": "parallax",
+ "cols": 100,
+ "rows": 24,
+ "parity": true,
+ "brand": "vtop",
+ "hostname": "mac.local",
+ "clock": "12:34:56 ",
+ "loadavg": [
+  1.23,
+  4.56,
+  7.89
+ ],
+ "cpu_values": [],
+ "cpu_scale": 1,
+ "cpu_initialized": true,
+ "cpu_value_label": 0,
+ "mem_values": [],
+ "mem_scale": 1,
+ "mem_initialized": true,
+ "mem_value_label": 0,
+ "procs": [
+  {
+   "Command": "com.apple.WebKit.WebContent",
+   "Count": 1,
+   "CPU %": "45.9",
+   "Memory %": "9.9"
+  },
+  {
+   "Command": "/usr/sbin/systemsoundd",
+   "Count": 1,
+   "CPU %": "0.1",
+   "Memory %": "0.0"
+  },
+  {
+   "Command": "a-very-long-command-name-1234567890",
+   "Count": 3,
+   "CPU %": "2.2",
+   "Memory %": "2.2"
+  }
+ ],
+ "selected": 1
+}

@@ -1,0 +1,63 @@
+{
+  "binary": "./target/release/ptop",
+  "sha256": "178704a018de2b97515c5c3598a197852f8e9758c7302dc2bb767f257401b925",
+  "dimensions": [
+    120,
+    21
+  ],
+  "tmux_version": "tmux 3.6a",
+  "checkpoints": [
+    {
+      "name": "first",
+      "selected": "alpha",
+      "background_count": 66,
+      "expected_background_count": 66,
+      "unexpected_background_cells": [],
+      "missing_selected_background_cells": [],
+      "passed": true,
+      "graph_background_cells": 0
+    },
+    {
+      "name": "down",
+      "selected": "beta",
+      "background_count": 66,
+      "expected_background_count": 66,
+      "unexpected_background_cells": [],
+      "missing_selected_background_cells": [],
+      "passed": true,
+      "graph_background_cells": 0
+    },
+    {
+      "name": "down-again",
+      "selected": "gamma",
+      "background_count": 66,
+      "expected_background_count": 66,
+      "unexpected_background_cells": [],
+      "missing_selected_background_cells": [],
+      "passed": true,
+      "graph_background_cells": 0
+    },
+    {
+      "name": "up",
+      "selected": "beta",
+      "background_count": 66,
+      "expected_background_count": 66,
+      "unexpected_background_cells": [],
+      "missing_selected_background_cells": [],
+      "passed": true,
+      "graph_background_cells": 0
+    },
+    {
+      "name": "later-frame",
+      "selected": "beta",
+      "background_count": 66,
+      "expected_background_count": 66,
+      "unexpected_background_cells": [],
+      "missing_selected_background_cells": [],
+      "passed": true,
+      "graph_background_cells": 0
+    }
+  ],
+  "passed": true,
+  "path_redactions": "Executable locations normalized for sharing; recorded binary hashes and results are unchanged."
+}

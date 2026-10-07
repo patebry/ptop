@@ -1,0 +1,22 @@
+{
+  "attributes": {
+    "baseline": "git-HEAD",
+    "regressions": "83",
+    "minor": "3",
+    "acked": "0",
+    "stale": "0",
+    "preexisting-worse": "30",
+    "new-symbol": "53",
+    "gating": "27",
+    "register-macro-excluded": "0",
+    "at": "7bcab7be8+dirty"
+  },
+  "gating_kinds": {
+    "complexity": 1,
+    "dead-code": 1,
+    "nesting": 1,
+    "short-horizon-churn": 20,
+    "verbosity": 4
+  },
+  "note": "Unsuppressed original-HEAD comparison after requested ptop branding/footer change."
+}

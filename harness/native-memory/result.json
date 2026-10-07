@@ -1,0 +1,113 @@
+{
+  "owned_child": 8484,
+  "owned_child_native": [
+    -1,
+    0
+  ],
+  "owned_child_ps": 1168,
+  "native_count": 897,
+  "ps_count": 897,
+  "denied_nonzero_count": 890,
+  "denied_nonzero_examples": [
+    {
+      "pid": 8484,
+      "ps_rss_kib": 1168,
+      "status": -1
+    },
+    {
+      "pid": 8474,
+      "ps_rss_kib": 14880,
+      "status": -1
+    },
+    {
+      "pid": 8448,
+      "ps_rss_kib": 1136,
+      "status": -1
+    },
+    {
+      "pid": 7382,
+      "ps_rss_kib": 1136,
+      "status": -1
+    },
+    {
+      "pid": 7270,
+      "ps_rss_kib": 4448,
+      "status": -1
+    },
+    {
+      "pid": 7267,
+      "ps_rss_kib": 3488,
+      "status": -1
+    },
+    {
+      "pid": 6298,
+      "ps_rss_kib": 27632,
+      "status": -1
+    },
+    {
+      "pid": 6299,
+      "ps_rss_kib": 23792,
+      "status": -1
+    },
+    {
+      "pid": 6297,
+      "ps_rss_kib": 25008,
+      "status": -1
+    },
+    {
+      "pid": 6295,
+      "ps_rss_kib": 24800,
+      "status": -1
+    },
+    {
+      "pid": 6294,
+      "ps_rss_kib": 24720,
+      "status": -1
+    },
+    {
+      "pid": 6293,
+      "ps_rss_kib": 24752,
+      "status": -1
+    },
+    {
+      "pid": 6291,
+      "ps_rss_kib": 25664,
+      "status": -1
+    },
+    {
+      "pid": 6290,
+      "ps_rss_kib": 14352,
+      "status": -1
+    },
+    {
+      "pid": 6288,
+      "ps_rss_kib": 24752,
+      "status": -1
+    },
+    {
+      "pid": 6289,
+      "ps_rss_kib": 24720,
+      "status": -1
+    },
+    {
+      "pid": 6282,
+      "ps_rss_kib": 21888,
+      "status": -1
+    },
+    {
+      "pid": 6281,
+      "ps_rss_kib": 25136,
+      "status": -1
+    },
+    {
+      "pid": 6280,
+      "ps_rss_kib": 22032,
+      "status": -1
+    },
+    {
+      "pid": 6275,
+      "ps_rss_kib": 22096,
+      "status": -1
+    }
+  ]
+}

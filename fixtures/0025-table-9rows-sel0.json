@@ -1,0 +1,80 @@
+{
+ "case": "0025-table-9rows-sel0",
+ "theme": "parallax",
+ "cols": 100,
+ "rows": 24,
+ "parity": true,
+ "brand": "vtop",
+ "hostname": "mac.local",
+ "clock": "12:34:56 ",
+ "loadavg": [
+  1.23,
+  4.56,
+  7.89
+ ],
+ "cpu_values": [],
+ "cpu_scale": 1,
+ "cpu_initialized": true,
+ "cpu_value_label": 0,
+ "mem_values": [],
+ "mem_scale": 1,
+ "mem_initialized": true,
+ "mem_value_label": 0,
+ "procs": [
+  {
+   "Command": "p0xxxxxxxxxx",
+   "Count": 0,
+   "CPU %": "0.1",
+   "Memory %": "0.5"
+  },
+  {
+   "Command": "proc",
+   "Count": 1,
+   "CPU %": "0.4",
+   "Memory %": "1.0"
+  },
+  {
+   "Command": "p2xxxxxxxxxx",
+   "Count": 2,
+   "CPU %": "2.1",
+   "Memory %": "2.5"
+  },
+  {
+   "Command": "p3xxxxxxxxxx",
+   "Count": 3,
+   "CPU %": "3.1",
+   "Memory %": "3.5"
+  },
+  {
+   "Command": "p4xxxxxxxxxx",
+   "Count": 4,
+   "CPU %": "4.1",
+   "Memory %": "4.5"
+  },
+  {
+   "Command": "p5xxxxxxxxxx",
+   "Count": 5,
+   "CPU %": "5.1",
+   "Memory %": "5.5"
+  },
+  {
+   "Command": "p6xxxxxxxxxx",
+   "Count": 6,
+   "CPU %": "6.1",
+   "Memory %": "6.5"
+  },
+  {
+   "Command": "p7xxxxxxxxxx",
+   "Count": 7,
+   "CPU %": "7.1",
+   "Memory %": "7.5"
+  },
+  {
+   "Command": "p8xxxxxxxxxx",
+   "Count": 8,
+   "CPU %": "8.1",
+   "Memory %": "8.5"
+  }
+ ],
+ "selected": 0
+}

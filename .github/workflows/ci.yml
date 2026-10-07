@@ -1,0 +1,67 @@
+name: ci
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-15, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@1.92.0
+        with:
+          components: rustfmt, clippy
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: fmt
+        run: cargo fmt --all -- --check
+      - name: clippy
+        run: cargo clippy --all-targets -- -D warnings
+      - name: test
+        run: cargo test --locked
+      - name: build
+        run: cargo build --locked --release
+      - name: Benchmark harness checks
+        run: python3 -m unittest discover -s scripts -p 'test_benchmark.py'
+      - name: install reference vtop
+        run: npm install --prefix /tmp/ptop-upstream vtop@0.6.1
+      - name: parity proof (fixtures and upstream renderer)
+        env:
+          PTOP_UPSTREAM_VTOP: /tmp/ptop-upstream/node_modules/vtop
+        run: |
+          node harness/fixtures/gen.js
+          python3 harness/proof.py
+          python3 harness/cli-proof.py
+          python3 harness/key-proof.py
+          python3 harness/sort-timer-proof.py
+          python3 harness/cadence-proof.py
+          python3 harness/failure-proof.py
+          python3 harness/upgrade-proof.py
+      - name: live terminal behavior
+        run: |
+          python3 harness/live-smoke.py
+      - name: Test native npm package
+        if: runner.os == 'macOS'
+        run: npm test
+      - name: Pack reviewed native artifact
+        if: runner.os == 'macOS'
+        run: |
+          mkdir -p dist
+          npm pack --pack-destination dist
+          shasum -a 256 dist/*.tgz > dist/SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        if: runner.os == 'macOS'
+        with:
+          name: ptop-npm-darwin-arm64
+          path: dist/
+          if-no-files-found: error

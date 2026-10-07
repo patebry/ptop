@@ -1,0 +1,44 @@
+{
+ "case": "0067-brand-ptop",
+ "theme": "parallax",
+ "cols": 100,
+ "rows": 24,
+ "parity": true,
+ "brand": "ptop",
+ "hostname": "ptop.box",
+ "clock": "23:59:59 ",
+ "loadavg": [
+  0.5,
+  2.25,
+  9.99
+ ],
+ "cpu_values": [],
+ "cpu_scale": 1,
+ "cpu_initialized": true,
+ "cpu_value_label": 0,
+ "mem_values": [],
+ "mem_scale": 1,
+ "mem_initialized": true,
+ "mem_value_label": 0,
+ "procs": [
+  {
+   "Command": "node",
+   "Count": 4,
+   "CPU %": "0.4",
+   "Memory %": "1.0"
+  },
+  {
+   "Command": "WindowServer",
+   "Count": 1,
+   "CPU %": "9.9",
+   "Memory %": "5.5"
+  },
+  {
+   "Command": "kernel_task",
+   "Count": 1,
+   "CPU %": "3.3",
+   "Memory %": "0.5"
+  }
+ ],
+ "selected": 0
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "name": "success",
+    "logs": [
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        "Installing vtop update...\n"
+      ],
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        " ** You will need to enter your password to upgrade ** \n"
+      ],
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        "npm install -g vtop\n"
+      ],
+      [
+        0,
+        "link -> /fixture/vtop.js\n\n"
+      ],
+      [
+        0,
+        "Finished updating. Clearing cache and relaunching...\n"
+      ]
+    ],
+    "effects": [
+      [
+        "sudo",
+        [
+          "npm",
+          "install",
+          "-g",
+          "vtop"
+        ],
+        {
+          "cachePassword": false,
+          "prompt": "Password:",
+          "spawnOptions": {
+            "stdio": "inherit"
+          }
+        }
+      ],
+      [
+        "require",
+        1000,
+        "/fixture/vtop.js"
+      ]
+    ],
+    "process": {
+      "0": {
+        "theme": "nord"
+      }
+    }
+  },
+  {
+    "name": "failed-with-path",
+    "logs": [
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        "Installing vtop update...\n"
+      ],
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        " ** You will need to enter your password to upgrade ** \n"
+      ],
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        "npm install -g vtop\n"
+      ],
+      [
+        0,
+        "link -> /fixture/vtop.js\n\n"
+      ],
+      [
+        0,
+        "npm failed\n\n"
+      ],
+      [
+        0,
+        "Finished updating. Clearing cache and relaunching...\n"
+      ]
+    ],
+    "effects": [
+      [
+        "sudo",
+        [
+          "npm",
+          "install",
+          "-g",
+          "vtop"
+        ],
+        {
+          "cachePassword": false,
+          "prompt": "Password:",
+          "spawnOptions": {
+            "stdio": "inherit"
+          }
+        }
+      ],
+      [
+        "require",
+        1000,
+        "/fixture/vtop.js"
+      ]
+    ],
+    "process": {
+      "0": {
+        "theme": "nord"
+      }
+    }
+  },
+  {
+    "name": "missing-path",
+    "logs": [
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        "Installing vtop update...\n"
+      ],
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        " ** You will need to enter your password to upgrade ** \n"
+      ],
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        "npm install -g vtop\n"
+      ],
+      [
+        0,
+        "up to date\n\n"
+      ],
+      [
+        0,
+        "Finished updating. Clearing cache and relaunching...\n"
+      ]
+    ],
+    "effects": [
+      [
+        "sudo",
+        [
+          "npm",
+          "install",
+          "-g",
+          "vtop"
+        ],
+        {
+          "cachePassword": false,
+          "prompt": "Password:",
+          "spawnOptions": {
+            "stdio": "inherit"
+          }
+        }
+      ],
+      [
+        "require",
+        1000,
+        false
+      ]
+    ],
+    "process": {
+      "0": {
+        "theme": "nord"
+      }
+    }
+  },
+  {
+    "name": "missing-token",
+    "logs": [
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        "Installing vtop update...\n"
+      ],
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        " ** You will need to enter your password to upgrade ** \n"
+      ],
+      [
+        0,
+        "\n"
+      ],
+      [
+        0,
+        "npm install -g vtop\n"
+      ],
+      [
+        0,
+        "vtop.js\n\n"
+      ],
+      [
+        0,
+        "Finished updating. Clearing cache and relaunching...\n"
+      ]
+    ],
+    "effects": [
+      [
+        "sudo",
+        [
+          "npm",
+          "install",
+          "-g",
+          "vtop"
+        ],
+        {
+          "cachePassword": false,
+          "prompt": "Password:",
+          "spawnOptions": {
+            "stdio": "inherit"
+          }
+        }
+      ],
+      [
+        "require",
+        1000,
+        "undefined"
+      ]
+    ],
+    "process": {
+      "0": {
+        "theme": "nord"
+      }
+    }
+  }
+]

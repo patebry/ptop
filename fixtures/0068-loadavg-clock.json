@@ -1,0 +1,32 @@
+{
+ "case": "0068-loadavg-clock",
+ "theme": "parallax",
+ "cols": 100,
+ "rows": 24,
+ "parity": true,
+ "brand": "vtop",
+ "hostname": "mac.local",
+ "clock": "00:00:00 ",
+ "loadavg": [
+  0,
+  0,
+  0
+ ],
+ "cpu_values": [],
+ "cpu_scale": 1,
+ "cpu_initialized": true,
+ "cpu_value_label": 0,
+ "mem_values": [],
+ "mem_scale": 1,
+ "mem_initialized": true,
+ "mem_value_label": 0,
+ "procs": [
+  {
+   "Command": "proc",
+   "Count": 1,
+   "CPU %": "0.4",
+   "Memory %": "1.0"
+  }
+ ],
+ "selected": 0
+}

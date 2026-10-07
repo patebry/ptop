@@ -1,0 +1,851 @@
+ %CPU %MEM COMM
+  0.0  0.0 /fixture/Example App 000/Contents/MacOS/service-000
+  0.7  0.3 /fixture/group-01/service-001
+  1.4  0.6 /fixture/group-02/service-002
+  2.1  0.9 /fixture/group-03/service-003
+  2.8  1.2 /fixture/group-04/service-004
+  3.5  1.5 /fixture/group-05/service-005
+  4.2  1.8 /fixture/group-06/service-006
+  4.9  0.0 /fixture/Example App 007/Contents/MacOS/service-007
+  5.6  0.3 /fixture/group-08/service-008
+  6.3  0.6 /fixture/group-09/service-009
+  7.0  0.9 /fixture/group-10/service-010
+  7.7  1.2 /fixture/group-11/service-011
+  8.4  1.5 /fixture/group-00/service-012
+  9.1  1.8 /fixture/group-01/service-013
+  9.8  0.0 /fixture/Example App 014/Contents/MacOS/service-014
+ 10.5  0.3 /fixture/group-03/service-015
+ 11.2  0.6 /fixture/group-04/service-016
+  0.6  0.9 /fixture/group-05/service-017
+  1.3  1.2 /fixture/group-06/service-018
+  2.0  1.5 /fixture/group-07/service-019
+  2.7  1.8 /fixture/group-08/service-020
+  3.4  0.0 /fixture/Example App 021/Contents/MacOS/service-021
+  4.1  0.3 /fixture/group-10/service-022
+  4.8  0.6 /fixture/group-11/service-023
+  5.5  0.9 /fixture/group-00/service-024
+  6.2  1.2 /fixture/group-01/service-025
+  6.9  1.5 /fixture/group-02/service-026
+  7.6  1.8 /fixture/group-03/service-027
+  8.3  0.0 /fixture/Example App 028/Contents/MacOS/service-028
+  9.0  0.3 /fixture/group-05/service-029
+  9.7  0.6 /fixture/group-06/service-030
+ 10.4  0.9 /fixture/group-07/service-031
+ 11.1  1.2 /fixture/group-08/service-032
+  0.5  1.5 /fixture/group-09/service-033
+  1.2  1.8 /fixture/group-10/service-034
+  1.9  0.0 /fixture/Example App 035/Contents/MacOS/service-035
+  2.6  0.3 /fixture/group-00/service-036
+  3.3  0.6 /fixture/group-01/service-037
+  4.0  0.9 /fixture/group-02/service-038
+  4.7  1.2 /fixture/group-03/service-039
+  5.4  1.5 /fixture/group-04/service-040
+  6.1  1.8 /fixture/group-05/service-041
+  6.8  0.0 /fixture/Example App 042/Contents/MacOS/service-042
+  7.5  0.3 /fixture/group-07/service-043
+  8.2  0.6 /fixture/group-08/service-044
+  8.9  0.9 /fixture/group-09/service-045
+  9.6  1.2 /fixture/group-10/service-046
+ 10.3  1.5 /fixture/group-11/service-047
+ 11.0  1.8 /fixture/group-00/service-048
+  0.4  0.0 /fixture/Example App 049/Contents/MacOS/service-049
+  1.1  0.3 /fixture/group-02/service-050
+  1.8  0.6 /fixture/group-03/service-051
+  2.5  0.9 /fixture/group-04/service-052
+  3.2  1.2 /fixture/group-05/service-053
+  3.9  1.5 /fixture/group-06/service-054
+  4.6  1.8 /fixture/group-07/service-055
+  5.3  0.0 /fixture/Example App 056/Contents/MacOS/service-056
+  6.0  0.3 /fixture/group-09/service-057
+  6.7  0.6 /fixture/group-10/service-058
+  7.4  0.9 /fixture/group-11/service-059
+  8.1  1.2 /fixture/group-00/service-060
+  8.8  1.5 /fixture/group-01/service-061
+  9.5  1.8 /fixture/group-02/service-062
+ 10.2  0.0 /fixture/Example App 063/Contents/MacOS/service-063
+ 10.9  0.3 /fixture/group-04/service-064
+  0.3  0.6 /fixture/group-05/service-065
+  1.0  0.9 /fixture/group-06/service-066
+  1.7  1.2 /fixture/group-07/service-067
+  2.4  1.5 /fixture/group-08/service-068
+  3.1  1.8 /fixture/group-09/service-069
+  3.8  0.0 /fixture/Example App 070/Contents/MacOS/service-070
+  4.5  0.3 /fixture/group-11/service-071
+  5.2  0.6 /fixture/group-00/service-072
+  5.9  0.9 /fixture/group-01/service-073
+  6.6  1.2 /fixture/group-02/service-074
+  7.3  1.5 /fixture/group-03/service-075
+  8.0  1.8 /fixture/group-04/service-076
+  8.7  0.0 /fixture/Example App 077/Contents/MacOS/service-077
+  9.4  0.3 /fixture/group-06/service-078
+ 10.1  0.6 /fixture/group-07/service-079
+ 10.8  0.9 /fixture/group-08/service-080
+  0.2  1.2 /fixture/group-09/service-081
+  0.9  1.5 /fixture/group-10/service-082
+  1.6  1.8 /fixture/group-11/service-083
+  2.3  0.0 /fixture/Example App 084/Contents/MacOS/service-084
+  3.0  0.3 /fixture/group-01/service-085
+  3.7  0.6 /fixture/group-02/service-086
+  4.4  0.9 /fixture/group-03/service-087
+  5.1  1.2 /fixture/group-04/service-088
+  5.8  1.5 /fixture/group-05/service-089
+  6.5  1.8 /fixture/group-06/service-090
+  7.2  0.0 /fixture/Example App 091/Contents/MacOS/service-091
+  7.9  0.3 /fixture/group-08/service-092
+  8.6  0.6 /fixture/group-09/service-093
+  9.3  0.9 /fixture/group-10/service-094
+ 10.0  1.2 /fixture/group-11/service-095
+ 10.7  1.5 /fixture/group-00/service-096
+  0.1  1.8 /fixture/group-01/service-097
+  0.8  0.0 /fixture/Example App 098/Contents/MacOS/service-098
+  1.5  0.3 /fixture/group-03/service-099
+  2.2  0.6 /fixture/group-04/service-100
+  2.9  0.9 /fixture/group-05/service-101
+  3.6  1.2 /fixture/group-06/service-102
+  4.3  1.5 /fixture/group-07/service-103
+  5.0  1.8 /fixture/group-08/service-104
+  5.7  0.0 /fixture/Example App 105/Contents/MacOS/service-105
+  6.4  0.3 /fixture/group-10/service-106
+  7.1  0.6 /fixture/group-11/service-107
+  7.8  0.9 /fixture/group-00/service-108
+  8.5  1.2 /fixture/group-01/service-109
+  9.2  1.5 /fixture/group-02/service-110
+  9.9  1.8 /fixture/group-03/service-111
+ 10.6  0.0 /fixture/Example App 112/Contents/MacOS/service-112
+  0.0  0.3 /fixture/group-05/service-113
+  0.7  0.6 /fixture/group-06/service-114
+  1.4  0.9 /fixture/group-07/service-115
+  2.1  1.2 /fixture/group-08/service-116
+  2.8  1.5 /fixture/group-09/service-117
+  3.5  1.8 /fixture/group-10/service-118
+  4.2  0.0 /fixture/Example App 119/Contents/MacOS/service-119
+  4.9  0.3 /fixture/group-00/service-120
+  5.6  0.6 /fixture/group-01/service-121
+  6.3  0.9 /fixture/group-02/service-122
+  7.0  1.2 /fixture/group-03/service-123
+  7.7  1.5 /fixture/group-04/service-124
+  8.4  1.8 /fixture/group-05/service-125
+  9.1  0.0 /fixture/Example App 126/Contents/MacOS/service-126
+  9.8  0.3 /fixture/group-07/service-127
+ 10.5  0.6 /fixture/group-08/service-128
+ 11.2  0.9 /fixture/group-09/service-129
+  0.6  1.2 /fixture/group-10/service-130
+  1.3  1.5 /fixture/group-11/service-131
+  2.0  1.8 /fixture/group-00/service-132
+  2.7  0.0 /fixture/Example App 133/Contents/MacOS/service-133
+  3.4  0.3 /fixture/group-02/service-134
+  4.1  0.6 /fixture/group-03/service-135
+  4.8  0.9 /fixture/group-04/service-136
+  5.5  1.2 /fixture/group-05/service-137
+  6.2  1.5 /fixture/group-06/service-138
+  6.9  1.8 /fixture/group-07/service-139
+  7.6  0.0 /fixture/Example App 140/Contents/MacOS/service-140
+  8.3  0.3 /fixture/group-09/service-141
+  9.0  0.6 /fixture/group-10/service-142
+  9.7  0.9 /fixture/group-11/service-143
+ 10.4  1.2 /fixture/group-00/service-144
+ 11.1  1.5 /fixture/group-01/service-145
+  0.5  1.8 /fixture/group-02/service-146
+  1.2  0.0 /fixture/Example App 147/Contents/MacOS/service-147
+  1.9  0.3 /fixture/group-04/service-148
+  2.6  0.6 /fixture/group-05/service-149
+  3.3  0.9 /fixture/group-06/service-150
+  4.0  1.2 /fixture/group-07/service-151
+  4.7  1.5 /fixture/group-08/service-152
+  5.4  1.8 /fixture/group-09/service-153
+  6.1  0.0 /fixture/Example App 154/Contents/MacOS/service-154
+  6.8  0.3 /fixture/group-11/service-155
+  7.5  0.6 /fixture/group-00/service-156
+  8.2  0.9 /fixture/group-01/service-157
+  8.9  1.2 /fixture/group-02/service-158
+  9.6  1.5 /fixture/group-03/service-159
+ 10.3  1.8 /fixture/group-04/service-160
+ 11.0  0.0 /fixture/Example App 161/Contents/MacOS/service-161
+  0.4  0.3 /fixture/group-06/service-162
+  1.1  0.6 /fixture/group-07/service-163
+  1.8  0.9 /fixture/group-08/service-164
+  2.5  1.2 /fixture/group-09/service-165
+  3.2  1.5 /fixture/group-10/service-166
+  3.9  1.8 /fixture/group-11/service-167
+  4.6  0.0 /fixture/Example App 168/Contents/MacOS/service-168
+  5.3  0.3 /fixture/group-01/service-169
+  6.0  0.6 /fixture/group-02/service-170
+  6.7  0.9 /fixture/group-03/service-171
+  7.4  1.2 /fixture/group-04/service-172
+  8.1  1.5 /fixture/group-05/service-173
+  8.8  1.8 /fixture/group-06/service-174
+  9.5  0.0 /fixture/Example App 175/Contents/MacOS/service-175
+ 10.2  0.3 /fixture/group-08/service-176
+ 10.9  0.6 /fixture/group-09/service-177
+  0.3  0.9 /fixture/group-10/service-178
+  1.0  1.2 /fixture/group-11/service-179
+  1.7  1.5 /fixture/group-00/service-180
+  2.4  1.8 /fixture/group-01/service-181
+  3.1  0.0 /fixture/Example App 182/Contents/MacOS/service-182
+  3.8  0.3 /fixture/group-03/service-183
+  4.5  0.6 /fixture/group-04/service-184
+  5.2  0.9 /fixture/group-05/service-185
+  5.9  1.2 /fixture/group-06/service-186
+  6.6  1.5 /fixture/group-07/service-187
+  7.3  1.8 /fixture/group-08/service-188
+  8.0  0.0 /fixture/Example App 189/Contents/MacOS/service-189
+  8.7  0.3 /fixture/group-10/service-190
+  9.4  0.6 /fixture/group-11/service-191
+ 10.1  0.9 /fixture/group-00/service-192
+ 10.8  1.2 /fixture/group-01/service-193
+  0.2  1.5 /fixture/group-02/service-194
+  0.9  1.8 /fixture/group-03/service-195
+  1.6  0.0 /fixture/Example App 196/Contents/MacOS/service-196
+  2.3  0.3 /fixture/group-05/service-197
+  3.0  0.6 /fixture/group-06/service-198
+  3.7  0.9 /fixture/group-07/service-199
+  4.4  1.2 /fixture/group-08/service-200
+  5.1  1.5 /fixture/group-09/service-201
+  5.8  1.8 /fixture/group-10/service-202
+  6.5  0.0 /fixture/Example App 203/Contents/MacOS/service-203
+  7.2  0.3 /fixture/group-00/service-204
+  7.9  0.6 /fixture/group-01/service-205
+  8.6  0.9 /fixture/group-02/service-206
+  9.3  1.2 /fixture/group-03/service-207
+ 10.0  1.5 /fixture/group-04/service-208
+ 10.7  1.8 /fixture/group-05/service-209
+  0.1  0.0 /fixture/Example App 210/Contents/MacOS/service-210
+  0.8  0.3 /fixture/group-07/service-211
+  1.5  0.6 /fixture/group-08/service-212
+  2.2  0.9 /fixture/group-09/service-213
+  2.9  1.2 /fixture/group-10/service-214
+  3.6  1.5 /fixture/group-11/service-215
+  4.3  1.8 /fixture/group-00/service-216
+  5.0  0.0 /fixture/Example App 217/Contents/MacOS/service-217
+  5.7  0.3 /fixture/group-02/service-218
+  6.4  0.6 /fixture/group-03/service-219
+  7.1  0.9 /fixture/group-04/service-220
+  7.8  1.2 /fixture/group-05/service-221
+  8.5  1.5 /fixture/group-06/service-222
+  9.2  1.8 /fixture/group-07/service-223
+  9.9  0.0 /fixture/Example App 224/Contents/MacOS/service-224
+ 10.6  0.3 /fixture/group-09/service-225
+  0.0  0.6 /fixture/group-10/service-226
+  0.7  0.9 /fixture/group-11/service-227
+  1.4  1.2 /fixture/group-00/service-228
+  2.1  1.5 /fixture/group-01/service-229
+  2.8  1.8 /fixture/group-02/service-230
+  3.5  0.0 /fixture/Example App 231/Contents/MacOS/service-231
+  4.2  0.3 /fixture/group-04/service-232
+  4.9  0.6 /fixture/group-05/service-233
+  5.6  0.9 /fixture/group-06/service-234
+  6.3  1.2 /fixture/group-07/service-235
+  7.0  1.5 /fixture/group-08/service-236
+  7.7  1.8 /fixture/group-09/service-237
+  8.4  0.0 /fixture/Example App 238/Contents/MacOS/service-238
+  9.1  0.3 /fixture/group-11/service-239
+  9.8  0.6 /fixture/group-00/service-240
+ 10.5  0.9 /fixture/group-01/service-241
+ 11.2  1.2 /fixture/group-02/service-242
+  0.6  1.5 /fixture/group-03/service-243
+  1.3  1.8 /fixture/group-04/service-244
+  2.0  0.0 /fixture/Example App 245/Contents/MacOS/service-245
+  2.7  0.3 /fixture/group-06/service-246
+  3.4  0.6 /fixture/group-07/service-247
+  4.1  0.9 /fixture/group-08/service-248
+  4.8  1.2 /fixture/group-09/service-249
+  5.5  1.5 /fixture/group-10/service-250
+  6.2  1.8 /fixture/group-11/service-251
+  6.9  0.0 /fixture/Example App 252/Contents/MacOS/service-252
+  7.6  0.3 /fixture/group-01/service-253
+  8.3  0.6 /fixture/group-02/service-254
+  9.0  0.9 /fixture/group-03/service-255
+  9.7  1.2 /fixture/group-04/service-256
+ 10.4  1.5 /fixture/group-05/service-257
+ 11.1  1.8 /fixture/group-06/service-258
+  0.5  0.0 /fixture/Example App 259/Contents/MacOS/service-259
+  1.2  0.3 /fixture/group-08/service-260
+  1.9  0.6 /fixture/group-09/service-261
+  2.6  0.9 /fixture/group-10/service-262
+  3.3  1.2 /fixture/group-11/service-263
+  4.0  1.5 /fixture/group-00/service-264
+  4.7  1.8 /fixture/group-01/service-265
+  5.4  0.0 /fixture/Example App 266/Contents/MacOS/service-266
+  6.1  0.3 /fixture/group-03/service-267
+  6.8  0.6 /fixture/group-04/service-268
+  7.5  0.9 /fixture/group-05/service-269
+  8.2  1.2 /fixture/group-06/service-270
+  8.9  1.5 /fixture/group-07/service-271
+  9.6  1.8 /fixture/group-08/service-272
+ 10.3  0.0 /fixture/Example App 273/Contents/MacOS/service-273
+ 11.0  0.3 /fixture/group-10/service-274
+  0.4  0.6 /fixture/group-11/service-275
+  1.1  0.9 /fixture/group-00/service-276
+  1.8  1.2 /fixture/group-01/service-277
+  2.5  1.5 /fixture/group-02/service-278
+  3.2  1.8 /fixture/group-03/service-279
+  3.9  0.0 /fixture/Example App 280/Contents/MacOS/service-280
+  4.6  0.3 /fixture/group-05/service-281
+  5.3  0.6 /fixture/group-06/service-282
+  6.0  0.9 /fixture/group-07/service-283
+  6.7  1.2 /fixture/group-08/service-284
+  7.4  1.5 /fixture/group-09/service-285
+  8.1  1.8 /fixture/group-10/service-286
+  8.8  0.0 /fixture/Example App 287/Contents/MacOS/service-287
+  9.5  0.3 /fixture/group-00/service-288
+ 10.2  0.6 /fixture/group-01/service-289
+ 10.9  0.9 /fixture/group-02/service-290
+  0.3  1.2 /fixture/group-03/service-291
+  1.0  1.5 /fixture/group-04/service-292
+  1.7  1.8 /fixture/group-05/service-293
+  2.4  0.0 /fixture/Example App 294/Contents/MacOS/service-294
+  3.1  0.3 /fixture/group-07/service-295
+  3.8  0.6 /fixture/group-08/service-296
+  4.5  0.9 /fixture/group-09/service-297
+  5.2  1.2 /fixture/group-10/service-298
+  5.9  1.5 /fixture/group-11/service-299
+  6.6  1.8 /fixture/group-00/service-300
+  7.3  0.0 /fixture/Example App 301/Contents/MacOS/service-301
+  8.0  0.3 /fixture/group-02/service-302
+  8.7  0.6 /fixture/group-03/service-303
+  9.4  0.9 /fixture/group-04/service-304
+ 10.1  1.2 /fixture/group-05/service-305
+ 10.8  1.5 /fixture/group-06/service-306
+  0.2  1.8 /fixture/group-07/service-307
+  0.9  0.0 /fixture/Example App 308/Contents/MacOS/service-308
+  1.6  0.3 /fixture/group-09/service-309
+  2.3  0.6 /fixture/group-10/service-310
+  3.0  0.9 /fixture/group-11/service-311
+  3.7  1.2 /fixture/group-00/service-312
+  4.4  1.5 /fixture/group-01/service-313
+  5.1  1.8 /fixture/group-02/service-314
+  5.8  0.0 /fixture/Example App 315/Contents/MacOS/service-315
+  6.5  0.3 /fixture/group-04/service-316
+  7.2  0.6 /fixture/group-05/service-317
+  7.9  0.9 /fixture/group-06/service-318
+  8.6  1.2 /fixture/group-07/service-319
+  9.3  1.5 /fixture/group-08/service-320
+ 10.0  1.8 /fixture/group-09/service-321
+ 10.7  0.0 /fixture/Example App 322/Contents/MacOS/service-322
+  0.1  0.3 /fixture/group-11/service-323
+  0.8  0.6 /fixture/group-00/service-324
+  1.5  0.9 /fixture/group-01/service-325
+  2.2  1.2 /fixture/group-02/service-326
+  2.9  1.5 /fixture/group-03/service-327
+  3.6  1.8 /fixture/group-04/service-328
+  4.3  0.0 /fixture/Example App 329/Contents/MacOS/service-329
+  5.0  0.3 /fixture/group-06/service-330
+  5.7  0.6 /fixture/group-07/service-331
+  6.4  0.9 /fixture/group-08/service-332
+  7.1  1.2 /fixture/group-09/service-333
+  7.8  1.5 /fixture/group-10/service-334
+  8.5  1.8 /fixture/group-11/service-335
+  9.2  0.0 /fixture/Example App 336/Contents/MacOS/service-336
+  9.9  0.3 /fixture/group-01/service-337
+ 10.6  0.6 /fixture/group-02/service-338
+  0.0  0.9 /fixture/group-03/service-339
+  0.7  1.2 /fixture/group-04/service-340
+  1.4  1.5 /fixture/group-05/service-341
+  2.1  1.8 /fixture/group-06/service-342
+  2.8  0.0 /fixture/Example App 343/Contents/MacOS/service-343
+  3.5  0.3 /fixture/group-08/service-344
+  4.2  0.6 /fixture/group-09/service-345
+  4.9  0.9 /fixture/group-10/service-346
+  5.6  1.2 /fixture/group-11/service-347
+  6.3  1.5 /fixture/group-00/service-348
+  7.0  1.8 /fixture/group-01/service-349
+  7.7  0.0 /fixture/Example App 350/Contents/MacOS/service-350
+  8.4  0.3 /fixture/group-03/service-351
+  9.1  0.6 /fixture/group-04/service-352
+  9.8  0.9 /fixture/group-05/service-353
+ 10.5  1.2 /fixture/group-06/service-354
+ 11.2  1.5 /fixture/group-07/service-355
+  0.6  1.8 /fixture/group-08/service-356
+  1.3  0.0 /fixture/Example App 357/Contents/MacOS/service-357
+  2.0  0.3 /fixture/group-10/service-358
+  2.7  0.6 /fixture/group-11/service-359
+  3.4  0.9 /fixture/group-00/service-360
+  4.1  1.2 /fixture/group-01/service-361
+  4.8  1.5 /fixture/group-02/service-362
+  5.5  1.8 /fixture/group-03/service-363
+  6.2  0.0 /fixture/Example App 364/Contents/MacOS/service-364
+  6.9  0.3 /fixture/group-05/service-365
+  7.6  0.6 /fixture/group-06/service-366
+  8.3  0.9 /fixture/group-07/service-367
+  9.0  1.2 /fixture/group-08/service-368
+  9.7  1.5 /fixture/group-09/service-369
+ 10.4  1.8 /fixture/group-10/service-370
+ 11.1  0.0 /fixture/Example App 371/Contents/MacOS/service-371
+  0.5  0.3 /fixture/group-00/service-372
+  1.2  0.6 /fixture/group-01/service-373
+  1.9  0.9 /fixture/group-02/service-374
+  2.6  1.2 /fixture/group-03/service-375
+  3.3  1.5 /fixture/group-04/service-376
+  4.0  1.8 /fixture/group-05/service-377
+  4.7  0.0 /fixture/Example App 378/Contents/MacOS/service-378
+  5.4  0.3 /fixture/group-07/service-379
+  6.1  0.6 /fixture/group-08/service-380
+  6.8  0.9 /fixture/group-09/service-381
+  7.5  1.2 /fixture/group-10/service-382
+  8.2  1.5 /fixture/group-11/service-383
+  8.9  1.8 /fixture/group-00/service-384
+  9.6  0.0 /fixture/Example App 385/Contents/MacOS/service-385
+ 10.3  0.3 /fixture/group-02/service-386
+ 11.0  0.6 /fixture/group-03/service-387
+  0.4  0.9 /fixture/group-04/service-388
+  1.1  1.2 /fixture/group-05/service-389
+  1.8  1.5 /fixture/group-06/service-390
+  2.5  1.8 /fixture/group-07/service-391
+  3.2  0.0 /fixture/Example App 392/Contents/MacOS/service-392
+  3.9  0.3 /fixture/group-09/service-393
+  4.6  0.6 /fixture/group-10/service-394
+  5.3  0.9 /fixture/group-11/service-395
+  6.0  1.2 /fixture/group-00/service-396
+  6.7  1.5 /fixture/group-01/service-397
+  7.4  1.8 /fixture/group-02/service-398
+  8.1  0.0 /fixture/Example App 399/Contents/MacOS/service-399
+  8.8  0.3 /fixture/group-04/service-400
+  9.5  0.6 /fixture/group-05/service-401
+ 10.2  0.9 /fixture/group-06/service-402
+ 10.9  1.2 /fixture/group-07/service-403
+  0.3  1.5 /fixture/group-08/service-404
+  1.0  1.8 /fixture/group-09/service-405
+  1.7  0.0 /fixture/Example App 406/Contents/MacOS/service-406
+  2.4  0.3 /fixture/group-11/service-407
+  3.1  0.6 /fixture/group-00/service-408
+  3.8  0.9 /fixture/group-01/service-409
+  4.5  1.2 /fixture/group-02/service-410
+  5.2  1.5 /fixture/group-03/service-411
+  5.9  1.8 /fixture/group-04/service-412
+  6.6  0.0 /fixture/Example App 413/Contents/MacOS/service-413
+  7.3  0.3 /fixture/group-06/service-414
+  8.0  0.6 /fixture/group-07/service-415
+  8.7  0.9 /fixture/group-08/service-416
+  9.4  1.2 /fixture/group-09/service-417
+ 10.1  1.5 /fixture/group-10/service-418
+ 10.8  1.8 /fixture/group-11/service-419
+  0.2  0.0 /fixture/Example App 420/Contents/MacOS/service-420
+  0.9  0.3 /fixture/group-01/service-421
+  1.6  0.6 /fixture/group-02/service-422
+  2.3  0.9 /fixture/group-03/service-423
+  3.0  1.2 /fixture/group-04/service-424
+  3.7  1.5 /fixture/group-05/service-425
+  4.4  1.8 /fixture/group-06/service-426
+  5.1  0.0 /fixture/Example App 427/Contents/MacOS/service-427
+  5.8  0.3 /fixture/group-08/service-428
+  6.5  0.6 /fixture/group-09/service-429
+  7.2  0.9 /fixture/group-10/service-430
+  7.9  1.2 /fixture/group-11/service-431
+  8.6  1.5 /fixture/group-00/service-432
+  9.3  1.8 /fixture/group-01/service-433
+ 10.0  0.0 /fixture/Example App 434/Contents/MacOS/service-434
+ 10.7  0.3 /fixture/group-03/service-435
+  0.1  0.6 /fixture/group-04/service-436
+  0.8  0.9 /fixture/group-05/service-437
+  1.5  1.2 /fixture/group-06/service-438
+  2.2  1.5 /fixture/group-07/service-439
+  2.9  1.8 /fixture/group-08/service-440
+  3.6  0.0 /fixture/Example App 441/Contents/MacOS/service-441
+  4.3  0.3 /fixture/group-10/service-442
+  5.0  0.6 /fixture/group-11/service-443
+  5.7  0.9 /fixture/group-00/service-444
+  6.4  1.2 /fixture/group-01/service-445
+  7.1  1.5 /fixture/group-02/service-446
+  7.8  1.8 /fixture/group-03/service-447
+  8.5  0.0 /fixture/Example App 448/Contents/MacOS/service-448
+  9.2  0.3 /fixture/group-05/service-449
+  9.9  0.6 /fixture/group-06/service-450
+ 10.6  0.9 /fixture/group-07/service-451
+  0.0  1.2 /fixture/group-08/service-452
+  0.7  1.5 /fixture/group-09/service-453
+  1.4  1.8 /fixture/group-10/service-454
+  2.1  0.0 /fixture/Example App 455/Contents/MacOS/service-455
+  2.8  0.3 /fixture/group-00/service-456
+  3.5  0.6 /fixture/group-01/service-457
+  4.2  0.9 /fixture/group-02/service-458
+  4.9  1.2 /fixture/group-03/service-459
+  5.6  1.5 /fixture/group-04/service-460
+  6.3  1.8 /fixture/group-05/service-461
+  7.0  0.0 /fixture/Example App 462/Contents/MacOS/service-462
+  7.7  0.3 /fixture/group-07/service-463
+  8.4  0.6 /fixture/group-08/service-464
+  9.1  0.9 /fixture/group-09/service-465
+  9.8  1.2 /fixture/group-10/service-466
+ 10.5  1.5 /fixture/group-11/service-467
+ 11.2  1.8 /fixture/group-00/service-468
+  0.6  0.0 /fixture/Example App 469/Contents/MacOS/service-469
+  1.3  0.3 /fixture/group-02/service-470
+  2.0  0.6 /fixture/group-03/service-471
+  2.7  0.9 /fixture/group-04/service-472
+  3.4  1.2 /fixture/group-05/service-473
+  4.1  1.5 /fixture/group-06/service-474
+  4.8  1.8 /fixture/group-07/service-475
+  5.5  0.0 /fixture/Example App 476/Contents/MacOS/service-476
+  6.2  0.3 /fixture/group-09/service-477
+  6.9  0.6 /fixture/group-10/service-478
+  7.6  0.9 /fixture/group-11/service-479
+  8.3  1.2 /fixture/group-00/service-480
+  9.0  1.5 /fixture/group-01/service-481
+  9.7  1.8 /fixture/group-02/service-482
+ 10.4  0.0 /fixture/Example App 483/Contents/MacOS/service-483
+ 11.1  0.3 /fixture/group-04/service-484
+  0.5  0.6 /fixture/group-05/service-485
+  1.2  0.9 /fixture/group-06/service-486
+  1.9  1.2 /fixture/group-07/service-487
+  2.6  1.5 /fixture/group-08/service-488
+  3.3  1.8 /fixture/group-09/service-489
+  4.0  0.0 /fixture/Example App 490/Contents/MacOS/service-490
+  4.7  0.3 /fixture/group-11/service-491
+  5.4  0.6 /fixture/group-00/service-492
+  6.1  0.9 /fixture/group-01/service-493
+  6.8  1.2 /fixture/group-02/service-494
+  7.5  1.5 /fixture/group-03/service-495
+  8.2  1.8 /fixture/group-04/service-496
+  8.9  0.0 /fixture/Example App 497/Contents/MacOS/service-497
+  9.6  0.3 /fixture/group-06/service-498
+ 10.3  0.6 /fixture/group-07/service-499
+ 11.0  0.9 /fixture/group-08/service-500
+  0.4  1.2 /fixture/group-09/service-501
+  1.1  1.5 /fixture/group-10/service-502
+  1.8  1.8 /fixture/group-11/service-503
+  2.5  0.0 /fixture/Example App 504/Contents/MacOS/service-504
+  3.2  0.3 /fixture/group-01/service-505
+  3.9  0.6 /fixture/group-02/service-506
+  4.6  0.9 /fixture/group-03/service-507
+  5.3  1.2 /fixture/group-04/service-508
+  6.0  1.5 /fixture/group-05/service-509
+  6.7  1.8 /fixture/group-06/service-510
+  7.4  0.0 /fixture/Example App 511/Contents/MacOS/service-511
+  8.1  0.3 /fixture/group-08/service-512
+  8.8  0.6 /fixture/group-09/service-513
+  9.5  0.9 /fixture/group-10/service-514
+ 10.2  1.2 /fixture/group-11/service-515
+ 10.9  1.5 /fixture/group-00/service-516
+  0.3  1.8 /fixture/group-01/service-517
+  1.0  0.0 /fixture/Example App 518/Contents/MacOS/service-518
+  1.7  0.3 /fixture/group-03/service-519
+  2.4  0.6 /fixture/group-04/service-520
+  3.1  0.9 /fixture/group-05/service-521
+  3.8  1.2 /fixture/group-06/service-522
+  4.5  1.5 /fixture/group-07/service-523
+  5.2  1.8 /fixture/group-08/service-524
+  5.9  0.0 /fixture/Example App 525/Contents/MacOS/service-525
+  6.6  0.3 /fixture/group-10/service-526
+  7.3  0.6 /fixture/group-11/service-527
+  8.0  0.9 /fixture/group-00/service-528
+  8.7  1.2 /fixture/group-01/service-529
+  9.4  1.5 /fixture/group-02/service-530
+ 10.1  1.8 /fixture/group-03/service-531
+ 10.8  0.0 /fixture/Example App 532/Contents/MacOS/service-532
+  0.2  0.3 /fixture/group-05/service-533
+  0.9  0.6 /fixture/group-06/service-534
+  1.6  0.9 /fixture/group-07/service-535
+  2.3  1.2 /fixture/group-08/service-536
+  3.0  1.5 /fixture/group-09/service-537
+  3.7  1.8 /fixture/group-10/service-538
+  4.4  0.0 /fixture/Example App 539/Contents/MacOS/service-539
+  5.1  0.3 /fixture/group-00/service-540
+  5.8  0.6 /fixture/group-01/service-541
+  6.5  0.9 /fixture/group-02/service-542
+  7.2  1.2 /fixture/group-03/service-543
+  7.9  1.5 /fixture/group-04/service-544
+  8.6  1.8 /fixture/group-05/service-545
+  9.3  0.0 /fixture/Example App 546/Contents/MacOS/service-546
+ 10.0  0.3 /fixture/group-07/service-547
+ 10.7  0.6 /fixture/group-08/service-548
+  0.1  0.9 /fixture/group-09/service-549
+  0.8  1.2 /fixture/group-10/service-550
+  1.5  1.5 /fixture/group-11/service-551
+  2.2  1.8 /fixture/group-00/service-552
+  2.9  0.0 /fixture/Example App 553/Contents/MacOS/service-553
+  3.6  0.3 /fixture/group-02/service-554
+  4.3  0.6 /fixture/group-03/service-555
+  5.0  0.9 /fixture/group-04/service-556
+  5.7  1.2 /fixture/group-05/service-557
+  6.4  1.5 /fixture/group-06/service-558
+  7.1  1.8 /fixture/group-07/service-559
+  7.8  0.0 /fixture/Example App 560/Contents/MacOS/service-560
+  8.5  0.3 /fixture/group-09/service-561
+  9.2  0.6 /fixture/group-10/service-562
+  9.9  0.9 /fixture/group-11/service-563
+ 10.6  1.2 /fixture/group-00/service-564
+  0.0  1.5 /fixture/group-01/service-565
+  0.7  1.8 /fixture/group-02/service-566
+  1.4  0.0 /fixture/Example App 567/Contents/MacOS/service-567
+  2.1  0.3 /fixture/group-04/service-568
+  2.8  0.6 /fixture/group-05/service-569
+  3.5  0.9 /fixture/group-06/service-570
+  4.2  1.2 /fixture/group-07/service-571
+  4.9  1.5 /fixture/group-08/service-572
+  5.6  1.8 /fixture/group-09/service-573
+  6.3  0.0 /fixture/Example App 574/Contents/MacOS/service-574
+  7.0  0.3 /fixture/group-11/service-575
+  7.7  0.6 /fixture/group-00/service-576
+  8.4  0.9 /fixture/group-01/service-577
+  9.1  1.2 /fixture/group-02/service-578
+  9.8  1.5 /fixture/group-03/service-579
+ 10.5  1.8 /fixture/group-04/service-580
+ 11.2  0.0 /fixture/Example App 581/Contents/MacOS/service-581
+  0.6  0.3 /fixture/group-06/service-582
+  1.3  0.6 /fixture/group-07/service-583
+  2.0  0.9 /fixture/group-08/service-584
+  2.7  1.2 /fixture/Example App 000/Contents/MacOS/service-000
+  3.4  1.5 /fixture/group-01/service-001
+  4.1  1.8 /fixture/group-02/service-002
+  4.8  0.0 /fixture/group-03/service-003
+  5.5  0.3 /fixture/group-04/service-004
+  6.2  0.6 /fixture/group-05/service-005
+  6.9  0.9 /fixture/group-06/service-006
+  7.6  1.2 /fixture/Example App 007/Contents/MacOS/service-007
+  8.3  1.5 /fixture/group-08/service-008
+  9.0  1.8 /fixture/group-09/service-009
+  9.7  0.0 /fixture/group-10/service-010
+ 10.4  0.3 /fixture/group-11/service-011
+ 11.1  0.6 /fixture/group-00/service-012
+  0.5  0.9 /fixture/group-01/service-013
+  1.2  1.2 /fixture/Example App 014/Contents/MacOS/service-014
+  1.9  1.5 /fixture/group-03/service-015
+  2.6  1.8 /fixture/group-04/service-016
+  3.3  0.0 /fixture/group-05/service-017
+  4.0  0.3 /fixture/group-06/service-018
+  4.7  0.6 /fixture/group-07/service-019
+  5.4  0.9 /fixture/group-08/service-020
+  6.1  1.2 /fixture/Example App 021/Contents/MacOS/service-021
+  6.8  1.5 /fixture/group-10/service-022
+  7.5  1.8 /fixture/group-11/service-023
+  8.2  0.0 /fixture/group-00/service-024
+  8.9  0.3 /fixture/group-01/service-025
+  9.6  0.6 /fixture/group-02/service-026
+ 10.3  0.9 /fixture/group-03/service-027
+ 11.0  1.2 /fixture/Example App 028/Contents/MacOS/service-028
+  0.4  1.5 /fixture/group-05/service-029
+  1.1  1.8 /fixture/group-06/service-030
+  1.8  0.0 /fixture/group-07/service-031
+  2.5  0.3 /fixture/group-08/service-032
+  3.2  0.6 /fixture/group-09/service-033
+  3.9  0.9 /fixture/group-10/service-034
+  4.6  1.2 /fixture/Example App 035/Contents/MacOS/service-035
+  5.3  1.5 /fixture/group-00/service-036
+  6.0  1.8 /fixture/group-01/service-037
+  6.7  0.0 /fixture/group-02/service-038
+  7.4  0.3 /fixture/group-03/service-039
+  8.1  0.6 /fixture/group-04/service-040
+  8.8  0.9 /fixture/group-05/service-041
+  9.5  1.2 /fixture/Example App 042/Contents/MacOS/service-042
+ 10.2  1.5 /fixture/group-07/service-043
+ 10.9  1.8 /fixture/group-08/service-044
+  0.3  0.0 /fixture/group-09/service-045
+  1.0  0.3 /fixture/group-10/service-046
+  1.7  0.6 /fixture/group-11/service-047
+  2.4  0.9 /fixture/group-00/service-048
+  3.1  1.2 /fixture/Example App 049/Contents/MacOS/service-049
+  3.8  1.5 /fixture/group-02/service-050
+  4.5  1.8 /fixture/group-03/service-051
+  5.2  0.0 /fixture/group-04/service-052
+  5.9  0.3 /fixture/group-05/service-053
+  6.6  0.6 /fixture/group-06/service-054
+  7.3  0.9 /fixture/group-07/service-055
+  8.0  1.2 /fixture/Example App 056/Contents/MacOS/service-056
+  8.7  1.5 /fixture/group-09/service-057
+  9.4  1.8 /fixture/group-10/service-058
+ 10.1  0.0 /fixture/group-11/service-059
+ 10.8  0.3 /fixture/group-00/service-060
+  0.2  0.6 /fixture/group-01/service-061
+  0.9  0.9 /fixture/group-02/service-062
+  1.6  1.2 /fixture/Example App 063/Contents/MacOS/service-063
+  2.3  1.5 /fixture/group-04/service-064
+  3.0  1.8 /fixture/group-05/service-065
+  3.7  0.0 /fixture/group-06/service-066
+  4.4  0.3 /fixture/group-07/service-067
+  5.1  0.6 /fixture/group-08/service-068
+  5.8  0.9 /fixture/group-09/service-069
+  6.5  1.2 /fixture/Example App 070/Contents/MacOS/service-070
+  7.2  1.5 /fixture/group-11/service-071
+  7.9  1.8 /fixture/group-00/service-072
+  8.6  0.0 /fixture/group-01/service-073
+  9.3  0.3 /fixture/group-02/service-074
+ 10.0  0.6 /fixture/group-03/service-075
+ 10.7  0.9 /fixture/group-04/service-076
+  0.1  1.2 /fixture/Example App 077/Contents/MacOS/service-077
+  0.8  1.5 /fixture/group-06/service-078
+  1.5  1.8 /fixture/group-07/service-079
+  2.2  0.0 /fixture/group-08/service-080
+  2.9  0.3 /fixture/group-09/service-081
+  3.6  0.6 /fixture/group-10/service-082
+  4.3  0.9 /fixture/group-11/service-083
+  5.0  1.2 /fixture/Example App 084/Contents/MacOS/service-084
+  5.7  1.5 /fixture/group-01/service-085
+  6.4  1.8 /fixture/group-02/service-086
+  7.1  0.0 /fixture/group-03/service-087
+  7.8  0.3 /fixture/group-04/service-088
+  8.5  0.6 /fixture/group-05/service-089
+  9.2  0.9 /fixture/group-06/service-090
+  9.9  1.2 /fixture/Example App 091/Contents/MacOS/service-091
+ 10.6  1.5 /fixture/group-08/service-092
+  0.0  1.8 /fixture/group-09/service-093
+  0.7  0.0 /fixture/group-10/service-094
+  1.4  0.3 /fixture/group-11/service-095
+  2.1  0.6 /fixture/group-00/service-096
+  2.8  0.9 /fixture/group-01/service-097
+  3.5  1.2 /fixture/Example App 098/Contents/MacOS/service-098
+  4.2  1.5 /fixture/group-03/service-099
+  4.9  1.8 /fixture/group-04/service-100
+  5.6  0.0 /fixture/group-05/service-101
+  6.3  0.3 /fixture/group-06/service-102
+  7.0  0.6 /fixture/group-07/service-103
+  7.7  0.9 /fixture/group-08/service-104
+  8.4  1.2 /fixture/Example App 105/Contents/MacOS/service-105
+  9.1  1.5 /fixture/group-10/service-106
+  9.8  1.8 /fixture/group-11/service-107
+ 10.5  0.0 /fixture/group-00/service-108
+ 11.2  0.3 /fixture/group-01/service-109
+  0.6  0.6 /fixture/group-02/service-110
+  1.3  0.9 /fixture/group-03/service-111
+  2.0  1.2 /fixture/Example App 112/Contents/MacOS/service-112
+  2.7  1.5 /fixture/group-05/service-113
+  3.4  1.8 /fixture/group-06/service-114
+  4.1  0.0 /fixture/group-07/service-115
+  4.8  0.3 /fixture/group-08/service-116
+  5.5  0.6 /fixture/group-09/service-117
+  6.2  0.9 /fixture/group-10/service-118
+  6.9  1.2 /fixture/Example App 119/Contents/MacOS/service-119
+  7.6  1.5 /fixture/group-00/service-120
+  8.3  1.8 /fixture/group-01/service-121
+  9.0  0.0 /fixture/group-02/service-122
+  9.7  0.3 /fixture/group-03/service-123
+ 10.4  0.6 /fixture/group-04/service-124
+ 11.1  0.9 /fixture/group-05/service-125
+  0.5  1.2 /fixture/Example App 126/Contents/MacOS/service-126
+  1.2  1.5 /fixture/group-07/service-127
+  1.9  1.8 /fixture/group-08/service-128
+  2.6  0.0 /fixture/group-09/service-129
+  3.3  0.3 /fixture/group-10/service-130
+  4.0  0.6 /fixture/group-11/service-131
+  4.7  0.9 /fixture/group-00/service-132
+  5.4  1.2 /fixture/Example App 133/Contents/MacOS/service-133
+  6.1  1.5 /fixture/group-02/service-134
+  6.8  1.8 /fixture/group-03/service-135
+  7.5  0.0 /fixture/group-04/service-136
+  8.2  0.3 /fixture/group-05/service-137
+  8.9  0.6 /fixture/group-06/service-138
+  9.6  0.9 /fixture/group-07/service-139
+ 10.3  1.2 /fixture/Example App 140/Contents/MacOS/service-140
+ 11.0  1.5 /fixture/group-09/service-141
+  0.4  1.8 /fixture/group-10/service-142
+  1.1  0.0 /fixture/group-11/service-143
+  1.8  0.3 /fixture/group-00/service-144
+  2.5  0.6 /fixture/group-01/service-145
+  3.2  0.9 /fixture/group-02/service-146
+  3.9  1.2 /fixture/Example App 147/Contents/MacOS/service-147
+  4.6  1.5 /fixture/group-04/service-148
+  5.3  1.8 /fixture/group-05/service-149
+  6.0  0.0 /fixture/group-06/service-150
+  6.7  0.3 /fixture/group-07/service-151
+  7.4  0.6 /fixture/group-08/service-152
+  8.1  0.9 /fixture/group-09/service-153
+  8.8  1.2 /fixture/Example App 154/Contents/MacOS/service-154
+  9.5  1.5 /fixture/group-11/service-155
+ 10.2  1.8 /fixture/group-00/service-156
+ 10.9  0.0 /fixture/group-01/service-157
+  0.3  0.3 /fixture/group-02/service-158
+  1.0  0.6 /fixture/group-03/service-159
+  1.7  0.9 /fixture/group-04/service-160
+  2.4  1.2 /fixture/Example App 161/Contents/MacOS/service-161
+  3.1  1.5 /fixture/group-06/service-162
+  3.8  1.8 /fixture/group-07/service-163
+  4.5  0.0 /fixture/group-08/service-164
+  5.2  0.3 /fixture/group-09/service-165
+  5.9  0.6 /fixture/group-10/service-166
+  6.6  0.9 /fixture/group-11/service-167
+  7.3  1.2 /fixture/Example App 168/Contents/MacOS/service-168
+  8.0  1.5 /fixture/group-01/service-169
+  8.7  1.8 /fixture/group-02/service-170
+  9.4  0.0 /fixture/group-03/service-171
+ 10.1  0.3 /fixture/group-04/service-172
+ 10.8  0.6 /fixture/group-05/service-173
+  0.2  0.9 /fixture/group-06/service-174
+  0.9  1.2 /fixture/Example App 175/Contents/MacOS/service-175
+  1.6  1.5 /fixture/group-08/service-176
+  2.3  1.8 /fixture/group-09/service-177
+  3.0  0.0 /fixture/group-10/service-178
+  3.7  0.3 /fixture/group-11/service-179
+  4.4  0.6 /fixture/group-00/service-180
+  5.1  0.9 /fixture/group-01/service-181
+  5.8  1.2 /fixture/Example App 182/Contents/MacOS/service-182
+  6.5  1.5 /fixture/group-03/service-183
+  7.2  1.8 /fixture/group-04/service-184
+  7.9  0.0 /fixture/group-05/service-185
+  8.6  0.3 /fixture/group-06/service-186
+  9.3  0.6 /fixture/group-07/service-187
+ 10.0  0.9 /fixture/group-08/service-188
+ 10.7  1.2 /fixture/Example App 189/Contents/MacOS/service-189
+  0.1  1.5 /fixture/group-10/service-190
+  0.8  1.8 /fixture/group-11/service-191
+  1.5  0.0 /fixture/group-00/service-192
+  2.2  0.3 /fixture/group-01/service-193
+  2.9  0.6 /fixture/group-02/service-194
+  3.6  0.9 /fixture/group-03/service-195
+  4.3  1.2 /fixture/Example App 196/Contents/MacOS/service-196
+  5.0  1.5 /fixture/group-05/service-197
+  5.7  1.8 /fixture/group-06/service-198
+  6.4  0.0 /fixture/group-07/service-199
+  7.1  0.3 /fixture/group-08/service-200
+  7.8  0.6 /fixture/group-09/service-201
+  8.5  0.9 /fixture/group-10/service-202
+  9.2  1.2 /fixture/Example App 203/Contents/MacOS/service-203
+  9.9  1.5 /fixture/group-00/service-204
+ 10.6  1.8 /fixture/group-01/service-205
+  0.0  0.0 /fixture/group-02/service-206
+  0.7  0.3 /fixture/group-03/service-207
+  1.4  0.6 /fixture/group-04/service-208
+  2.1  0.9 /fixture/group-05/service-209
+  2.8  1.2 /fixture/Example App 210/Contents/MacOS/service-210
+  3.5  1.5 /fixture/group-07/service-211
+  4.2  1.8 /fixture/group-08/service-212
+  4.9  0.0 /fixture/group-09/service-213
+  5.6  0.3 /fixture/group-10/service-214
+  6.3  0.6 /fixture/group-11/service-215
+  7.0  0.9 /fixture/group-00/service-216
+  7.7  1.2 /fixture/Example App 217/Contents/MacOS/service-217
+  8.4  1.5 /fixture/group-02/service-218
+  9.1  1.8 /fixture/group-03/service-219
+  9.8  0.0 /fixture/group-04/service-220
+ 10.5  0.3 /fixture/group-05/service-221
+ 11.2  0.6 /fixture/group-06/service-222
+  0.6  0.9 /fixture/group-07/service-223
+  1.3  1.2 /fixture/Example App 224/Contents/MacOS/service-224
+  2.0  1.5 /fixture/group-09/service-225
+  2.7  1.8 /fixture/group-10/service-226
+  3.4  0.0 /fixture/group-11/service-227
+  4.1  0.3 /fixture/group-00/service-228
+  4.8  0.6 /fixture/group-01/service-229
+  5.5  0.9 /fixture/group-02/service-230
+  6.2  1.2 /fixture/Example App 231/Contents/MacOS/service-231
+  6.9  1.5 /fixture/group-04/service-232
+  7.6  1.8 /fixture/group-05/service-233
+  8.3  0.0 /fixture/group-06/service-234
+  9.0  0.3 /fixture/group-07/service-235
+  9.7  0.6 /fixture/group-08/service-236
+ 10.4  0.9 /fixture/group-09/service-237
+ 11.1  1.2 /fixture/Example App 238/Contents/MacOS/service-238
+  0.5  1.5 /fixture/group-11/service-239
+  1.2  1.8 /fixture/group-00/service-240
+  1.9  0.0 /fixture/group-01/service-241
+  2.6  0.3 /fixture/group-02/service-242
+  3.3  0.6 /fixture/group-03/service-243
+  4.0  0.9 /fixture/group-04/service-244
+  4.7  1.2 /fixture/Example App 245/Contents/MacOS/service-245
+  5.4  1.5 /fixture/group-06/service-246
+  6.1  1.8 /fixture/group-07/service-247
+  6.8  0.0 /fixture/group-08/service-248
+  7.5  0.3 /fixture/group-09/service-249
+  8.2  0.6 /fixture/group-10/service-250
+  8.9  0.9 /fixture/group-11/service-251
+  9.6  1.2 /fixture/Example App 252/Contents/MacOS/service-252
+ 10.3  1.5 /fixture/group-01/service-253
+ 11.0  1.8 /fixture/group-02/service-254
+  0.4  0.0 /fixture/group-03/service-255
+  1.1  0.3 /fixture/group-04/service-256
+  1.8  0.6 /fixture/group-05/service-257
+  2.5  0.9 /fixture/group-06/service-258
+  3.2  1.2 /fixture/Example App 259/Contents/MacOS/service-259
+  3.9  1.5 /fixture/group-08/service-260
+  4.6  1.8 /fixture/group-09/service-261
+  5.3  0.0 /fixture/group-10/service-262
+  6.0  0.3 /fixture/group-11/service-263
+  6.7  0.6 /fixture/group-00/service-264

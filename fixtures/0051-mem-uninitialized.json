@@ -1,0 +1,35 @@
+{
+ "case": "0051-mem-uninitialized",
+ "theme": "parallax",
+ "cols": 100,
+ "rows": 24,
+ "parity": true,
+ "brand": "vtop",
+ "hostname": "mac.local",
+ "clock": "12:34:56 ",
+ "loadavg": [
+  1.23,
+  4.56,
+  7.89
+ ],
+ "cpu_values": [
+  20,
+  40
+ ],
+ "cpu_scale": 1,
+ "cpu_initialized": true,
+ "cpu_value_label": 40,
+ "mem_values": [],
+ "mem_scale": 1,
+ "mem_initialized": false,
+ "mem_value_label": "NaN",
+ "procs": [
+  {
+   "Command": "proc",
+   "Count": 1,
+   "CPU %": "0.4",
+   "Memory %": "1.0"
+  }
+ ],
+ "selected": 0
+}

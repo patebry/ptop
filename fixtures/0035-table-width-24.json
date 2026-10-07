@@ -1,0 +1,44 @@
+{
+ "case": "0035-table-width-24",
+ "theme": "parallax",
+ "cols": 24,
+ "rows": 24,
+ "parity": true,
+ "brand": "vtop",
+ "hostname": "mac.local",
+ "clock": "12:34:56 ",
+ "loadavg": [
+  1.23,
+  4.56,
+  7.89
+ ],
+ "cpu_values": [
+  30,
+  55,
+  5
+ ],
+ "cpu_scale": 1,
+ "cpu_initialized": true,
+ "cpu_value_label": 5,
+ "mem_values": [
+  40
+ ],
+ "mem_scale": 1,
+ "mem_initialized": true,
+ "mem_value_label": 40,
+ "procs": [
+  {
+   "Command": "Chrome",
+   "Count": 4,
+   "CPU %": "0.4",
+   "Memory %": "1.0"
+  },
+  {
+   "Command": "kernel_task",
+   "Count": 1,
+   "CPU %": "3.3",
+   "Memory %": "0.5"
+  }
+ ],
+ "selected": 0
+}
