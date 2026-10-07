@@ -11,6 +11,8 @@ ptop branding, a link-free footer, and manual updates; see
 [compatibility and measurement](#compatibility-and-measurement) for the tested
 coverage and remaining limits.
 
+Read the story: [Why I built ptop, a copy of vtop in Rust](https://www.patebryant.com/articles/ptop-rust-vtop).
+
 ![ptop with dotted CPU and memory graphs and a process list](docs/assets/ptop.png)
 
 *Preview rendered by ptop from synthetic demonstration data. Font appearance
