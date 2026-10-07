@@ -1,7 +1,15 @@
-# ptop
+# ptop — Pate's top
 
-A native Rust terminal system monitor inspired by vtop: dotted CPU and memory
-history, a process list, keyboard navigation, mouse selection, and 12 themes.
+A copy of [vtop](https://github.com/MrRio/vtop), rewritten in Rust.
+
+I like vtop. I just wanted a more performant version that works exactly the same,
+so I built **ptop**, short for **Pate's top**. Same idea: dotted CPU and memory
+history, the process list, familiar controls, and all 12 themes. Rust under the hood.
+
+Matching vtop's look and behavior is the goal. The intentional differences are
+ptop branding, a link-free footer, and manual updates; see
+[compatibility and measurement](#compatibility-and-measurement) for the tested
+coverage and remaining limits.
 
 ![ptop with dotted CPU and memory graphs and a process list](docs/assets/ptop.png)
 
@@ -13,7 +21,7 @@ depends on your terminal.*
 - Twelve bundled themes, with no runtime asset downloads.
 - Native execution and explicit, manual updates.
 
-The first npm release supports **Apple Silicon macOS 15 or later**. The package
+The npm package supports **Apple Silicon macOS 15 or later**. The package
 runs the native executable directly—no resident Node wrapper, install-time
 download, or Rust toolchain required. Intel Macs, Linux, and Windows are not
 included in this npm release.

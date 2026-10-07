@@ -1,8 +1,8 @@
 [package]
 name = "ptop"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-description = "Native terminal system monitor inspired by vtop"
+description = "Pate's top: a copy of vtop rewritten in Rust for less overhead"
 repository = "https://github.com/patebry/ptop"
 license = "MIT"
 
