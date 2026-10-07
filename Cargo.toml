@@ -1,6 +1,6 @@
 [package]
 name = "ptop"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 description = "Pate's top: a copy of vtop rewritten in Rust for less overhead"
 repository = "https://github.com/patebry/ptop"

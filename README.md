@@ -23,17 +23,38 @@ depends on your terminal.*
 - Twelve bundled themes, with no runtime asset downloads.
 - Native execution and explicit, manual updates.
 
-The npm package supports **Apple Silicon macOS 15 or later**. The package
-runs the native executable directly—no resident Node wrapper, install-time
-download, or Rust toolchain required. Intel Macs, Linux, and Windows are not
-included in this npm release.
+ptop runs on **macOS and Linux**. Ubuntu builds, compatibility checks, and
+live-terminal tests run in CI alongside macOS.
 
 ## Install and run
+
+### macOS: prebuilt npm package
+
+For **Apple Silicon Macs running macOS 15 or later**:
 
 ```sh
 npm install -g @patebryant/ptop
 ptop
 ```
+
+The npm package runs the native executable directly—no resident Node wrapper,
+install-time download, or Rust toolchain required. Its prebuilt binary is currently
+macOS ARM64 only; Linux uses the source installation below.
+
+### Linux: build from source
+
+With Rust 1.92.0 installed and the usual Linux tools (`ps`, `free`, `hostname`,
+and `killall`) available:
+
+```sh
+cargo install --git https://github.com/patebry/ptop --locked
+ptop
+```
+
+The Linux sensor implementation reads CPU data from `/proc/stat` and uses Linux
+process and memory tools. Ubuntu is tested in CI; other distributions and CPU
+architectures have not all been verified. Intel Mac source builds are not yet
+verified either.
 
 Press **q** to quit. Other examples:
 

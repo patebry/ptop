@@ -1,6 +1,6 @@
 {
   "name": "@patebryant/ptop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Pate's top: a copy of vtop rewritten in Rust, built for familiar behavior with less overhead",
   "license": "MIT",
   "repository": {
