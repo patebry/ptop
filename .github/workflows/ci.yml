@@ -32,7 +32,7 @@ jobs:
       - name: build
         run: cargo build --locked --release
       - name: Benchmark harness checks
-        run: python3 -m unittest discover -s scripts -p 'test_benchmark.py'
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
       - name: install reference vtop
         run: npm install --prefix /tmp/ptop-upstream vtop@0.6.1
       - name: parity proof (fixtures and upstream renderer)
