@@ -50,6 +50,9 @@ jobs:
       - name: live terminal behavior
         run: |
           python3 harness/live-smoke.py
+      - name: Native macOS memory coverage and cleanup
+        if: runner.os == 'macOS'
+        run: python3 harness/memory-collector-proof.py --output /tmp/memory-collector-proof.json
       - name: Test native npm package
         if: runner.os == 'macOS'
         run: npm test
