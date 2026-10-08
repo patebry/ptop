@@ -1,0 +1,315 @@
+{
+  "binary_sha256": "4c7af577effd972652411298498902427d7c67b38539e92fdfbb3347bb72e9c9",
+  "passed": true,
+  "aggregate": {
+    "passed": true,
+    "samples": [
+      {
+        "native_kib": 78473620,
+        "denied_count": 294,
+        "hybrid_kib": 81988180,
+        "elapsed_ms": 8.233459,
+        "reference_before_kib": 81988580,
+        "reference_after_kib": 81989300,
+        "outside_bracket_kib": 400,
+        "bracket_ms": 222.60712506249547,
+        "passed": true
+      },
+      {
+        "native_kib": 78474068,
+        "denied_count": 296,
+        "hybrid_kib": 81996532,
+        "elapsed_ms": 8.483457999999999,
+        "reference_before_kib": 81989188,
+        "reference_after_kib": 81998484,
+        "outside_bracket_kib": 0,
+        "bracket_ms": 95.15837510116398,
+        "passed": true
+      },
+      {
+        "native_kib": 78473956,
+        "denied_count": 294,
+        "hybrid_kib": 81988452,
+        "elapsed_ms": 7.692208,
+        "reference_before_kib": 81989380,
+        "reference_after_kib": 81989588,
+        "outside_bracket_kib": 928,
+        "bracket_ms": 96.32183401845396,
+        "passed": true
+      },
+      {
+        "native_kib": 78474244,
+        "denied_count": 296,
+        "hybrid_kib": 81993908,
+        "elapsed_ms": 8.340667,
+        "reference_before_kib": 81989604,
+        "reference_after_kib": 81995956,
+        "outside_bracket_kib": 0,
+        "bracket_ms": 89.896917110309,
+        "passed": true
+      },
+      {
+        "native_kib": 78474228,
+        "denied_count": 294,
+        "hybrid_kib": 81988676,
+        "elapsed_ms": 9.767209000000001,
+        "reference_before_kib": 81989652,
+        "reference_after_kib": 81989652,
+        "outside_bracket_kib": 976,
+        "bracket_ms": 86.74374991096556,
+        "passed": true
+      },
+      {
+        "native_kib": 78474292,
+        "denied_count": 294,
+        "hybrid_kib": 81988852,
+        "elapsed_ms": 7.321583,
+        "reference_before_kib": 81989764,
+        "reference_after_kib": 81989796,
+        "outside_bracket_kib": 912,
+        "bracket_ms": 90.53895901888609,
+        "passed": true
+      },
+      {
+        "native_kib": 78481060,
+        "denied_count": 294,
+        "hybrid_kib": 81995428,
+        "elapsed_ms": 9.716583,
+        "reference_before_kib": 82006340,
+        "reference_after_kib": 82011044,
+        "outside_bracket_kib": 10912,
+        "bracket_ms": 97.11241698823869,
+        "passed": true
+      },
+      {
+        "native_kib": 78515668,
+        "denied_count": 294,
+        "hybrid_kib": 82030052,
+        "elapsed_ms": 7.929125,
+        "reference_before_kib": 82029220,
+        "reference_after_kib": 82031092,
+        "outside_bracket_kib": 0,
+        "bracket_ms": 90.69099999032915,
+        "passed": true
+      },
+      {
+        "native_kib": 78518644,
+        "denied_count": 294,
+        "hybrid_kib": 82033108,
+        "elapsed_ms": 8.137416,
+        "reference_before_kib": 82048068,
+        "reference_after_kib": 82034116,
+        "outside_bracket_kib": 1008,
+        "bracket_ms": 105.14620901085436,
+        "passed": true
+      },
+      {
+        "native_kib": 78518628,
+        "denied_count": 294,
+        "hybrid_kib": 82033028,
+        "elapsed_ms": 7.463958,
+        "reference_before_kib": 82033652,
+        "reference_after_kib": 82034164,
+        "outside_bracket_kib": 624,
+        "bracket_ms": 90.48004099167883,
+        "passed": true
+      },
+      {
+        "native_kib": 78532372,
+        "denied_count": 294,
+        "hybrid_kib": 82046900,
+        "elapsed_ms": 13.317292,
+        "reference_before_kib": 82043252,
+        "reference_after_kib": 82040740,
+        "outside_bracket_kib": 3648,
+        "bracket_ms": 140.78695815987885,
+        "passed": true
+      },
+      {
+        "native_kib": 78520324,
+        "denied_count": 296,
+        "hybrid_kib": 82043124,
+        "elapsed_ms": 24.265209,
+        "reference_before_kib": 82034900,
+        "reference_after_kib": 82045508,
+        "outside_bracket_kib": 0,
+        "bracket_ms": 132.40433298051357,
+        "passed": true
+      },
+      {
+        "native_kib": 78520804,
+        "denied_count": 294,
+        "hybrid_kib": 82035188,
+        "elapsed_ms": 8.754625,
+        "reference_before_kib": 82035380,
+        "reference_after_kib": 82037316,
+        "outside_bracket_kib": 192,
+        "bracket_ms": 127.91937496513128,
+        "passed": true
+      },
+      {
+        "native_kib": 78523844,
+        "denied_count": 294,
+        "hybrid_kib": 82038164,
+        "elapsed_ms": 23.971249999999998,
+        "reference_before_kib": 82049012,
+        "reference_after_kib": 82039188,
+        "outside_bracket_kib": 1024,
+        "bracket_ms": 119.50812512077391,
+        "passed": true
+      },
+      {
+        "native_kib": 78522628,
+        "denied_count": 294,
+        "hybrid_kib": 82036948,
+        "elapsed_ms": 8.126166000000001,
+        "reference_before_kib": 82037940,
+        "reference_after_kib": 82038020,
+        "outside_bracket_kib": 992,
+        "bracket_ms": 90.06812493316829,
+        "passed": true
+      },
+      {
+        "native_kib": 78477668,
+        "denied_count": 294,
+        "hybrid_kib": 81992036,
+        "elapsed_ms": 7.68775,
+        "reference_before_kib": 82046372,
+        "reference_after_kib": 81992996,
+        "outside_bracket_kib": 960,
+        "bracket_ms": 83.64450000226498,
+        "passed": true
+      },
+      {
+        "native_kib": 78482996,
+        "denied_count": 294,
+        "hybrid_kib": 81997300,
+        "elapsed_ms": 8.041082999999999,
+        "reference_before_kib": 81992964,
+        "reference_after_kib": 81995524,
+        "outside_bracket_kib": 1776,
+        "bracket_ms": 85.12433292344213,
+        "passed": true
+      },
+      {
+        "native_kib": 78477892,
+        "denied_count": 295,
+        "hybrid_kib": 81996676,
+        "elapsed_ms": 7.850875,
+        "reference_before_kib": 81995700,
+        "reference_after_kib": 81993332,
+        "outside_bracket_kib": 976,
+        "bracket_ms": 98.05508307181299,
+        "passed": true
+      },
+      {
+        "native_kib": 78469220,
+        "denied_count": 294,
+        "hybrid_kib": 81983620,
+        "elapsed_ms": 7.983333,
+        "reference_before_kib": 81984212,
+        "reference_after_kib": 81987492,
+        "outside_bracket_kib": 592,
+        "bracket_ms": 94.28466693498194,
+        "passed": true
+      },
+      {
+        "native_kib": 78511076,
+        "denied_count": 295,
+        "hybrid_kib": 82030596,
+        "elapsed_ms": 12.548125,
+        "reference_before_kib": 81998564,
+        "reference_after_kib": 82043028,
+        "outside_bracket_kib": 0,
+        "bracket_ms": 119.19124983251095,
+        "passed": true
+      }
+    ],
+    "allowance_kib": 100663,
+    "physical_kib": 100663296,
+    "max_outside_bracket_kib": 10912,
+    "median_hybrid_ms": 8.185437499999999
+  },
+  "default_pty": {
+    "exit_code": 0,
+    "quit_ms": 105.50649999640882,
+    "terminal_restored": true,
+    "stopped_hybrid": true,
+    "stopped_child_reaped": true,
+    "observations": {
+      "process": {
+        "observed": 2,
+        "maximum_phase_error_ms": 3.0458748806267977,
+        "span_seconds": 1.9969541251193732
+      },
+      "legacy_memory": {
+        "observed": 0,
+        "maximum_phase_error_ms": null
+      },
+      "hybrid_memory": {
+        "observed": 16,
+        "maximum_phase_error_ms": 10.245332866906764,
+        "span_seconds": 3.0035216249525547
+      }
+    },
+    "passed": true
+  },
+  "reference_pty": {
+    "exit_code": 0,
+    "quit_ms": 107.21524991095066,
+    "terminal_restored": true,
+    "stopped_hybrid": false,
+    "stopped_child_reaped": true,
+    "observations": {
+      "process": {
+        "observed": 1,
+        "maximum_phase_error_ms": null
+      },
+      "legacy_memory": {
+        "observed": 8,
+        "maximum_phase_error_ms": 4.904708033427463,
+        "span_seconds": 1.4049047080334276
+      },
+      "hybrid_memory": {
+        "observed": 0,
+        "maximum_phase_error_ms": null
+      }
+    },
+    "passed": true
+  },
+  "override_pty": {
+    "exit_code": 0,
+    "quit_ms": 103.09583391062915,
+    "terminal_restored": true,
+    "stopped_hybrid": false,
+    "stopped_child_reaped": true,
+    "observations": {
+      "process": {
+        "observed": 1,
+        "maximum_phase_error_ms": null
+      },
+      "legacy_memory": {
+        "observed": 8,
+        "maximum_phase_error_ms": 10.360332997515709,
+        "span_seconds": 1.4066192500758916
+      },
+      "hybrid_memory": {
+        "observed": 0,
+        "maximum_phase_error_ms": null
+      }
+    },
+    "passed": true,
+    "fixture_memory_cadence": {
+      "observed": 8,
+      "maximum_phase_error_ms": 86.17199994623658,
+      "span_seconds": 1.27568666706793
+    },
+    "fixture_process_polls": 1
+  },
+  "limits": [
+    "Independent live snapshots include process churn and measurement processes.",
+    "Child observations are a lower bound, not an exact count of scheduler dispatches.",
+    "The observer briefly suspends owned processes: this is functional evidence, not a CPU benchmark.",
+    "cadence-proof.py separately verifies fixed200ms scheduling and overlap."
+  ]
+}

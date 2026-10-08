@@ -112,12 +112,22 @@ provide separate evidence. This is finite test coverage, not a universal visual
 or performance guarantee.
 
 `--vtop-parity` is an explicit reference-testing mode. It restores the predecessor
-name, footer and updater, including its npm/sudo behavior on the update key.
+collectors, name, footer and updater, including its npm/sudo behavior on the update key.
 Use normal ptop for the native package experience.
+
+On macOS, normal ptop reads process RSS directly where permitted and asks the
+system `ps` only for protected processes. It preserves vtop's memory calculation
+and 200 ms sampling cadence; the process-list collector is unchanged. Incomplete
+native results fall back to the original collector. A custom `ps` on PATH also
+selects the original collector.
 
 Use the [benchmark instructions](docs/BENCHMARKING.md) to run controlled comparisons
 on your machine. CPU measurements include reaped sensor children; sampled RSS
 is the monitor's own memory, not total process-tree memory.
+
+[The 0.1.3 collector evaluation](https://github.com/patebry/ptop/blob/905251fa8105a8aea29c0aa4f284ec9f041fcd6f/docs/PERFORMANCE-COLLECTORS-2026-10-07.md)
+measured 68–71% less total CPU than 0.1.2 on one Mac, at unchanged sensor cadences.
+The report includes all runs, memory warmup, compatibility checks, and limitations.
 
 [Four-tool measurements](https://github.com/patebry/ptop/blob/main/docs/PERFORMANCE-FOUR-TOOLS-2026-10-07.md)
 compare ptop 0.1.2, vtop, htop, and btop at a common requested UI refresh interval.

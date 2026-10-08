@@ -7,7 +7,8 @@ pub struct Args {
     pub quit_after: i64,      // 0 = run forever
     pub update_interval: i64, // 300
     pub mouse: bool,
-    pub parity: bool,            // --vtop-parity
+    pub parity: bool,            // preserve vtop's sensor arithmetic
+    pub reference_sensors: bool, // --vtop-parity also selects original collectors
     pub capture: Option<String>, // --capture PATH
     pub version: bool,
     pub help: bool,
@@ -23,6 +24,7 @@ impl Default for Args {
             update_interval: 300,
             mouse: true,
             parity: true,
+            reference_sensors: false,
             capture: None,
             version: false,
             help: false,
@@ -96,10 +98,12 @@ pub fn parse(argv: &[String]) -> Args {
             "--no-mouse" => a.mouse = false,
             "--vtop-parity" => {
                 a.parity = true;
+                a.reference_sensors = true;
                 a.brand = "vtop";
             }
             "--fix" => {
                 a.parity = false;
+                a.reference_sensors = false;
                 a.brand = "ptop";
             }
             "--capture" => {
@@ -178,7 +182,7 @@ Options:
   --no-mouse                        disable mouse input
   --quit-after [seconds]            quits after interval
   --update-interval [milliseconds]  interval between updates
-  --vtop-parity                     bug-for-bug vtop mode (XOR memory math, vtop branding)
+  --vtop-parity                     original collectors, sensor math, and vtop branding
   --fix                             fixed sensor math + ptop branding
   --capture <fixture.json>          offline frame dump for the proof harness
   -V, --version                     output the version number
@@ -197,6 +201,7 @@ mod tests {
     fn parity_and_mouse_are_default_with_explicit_opt_outs() {
         let default = parse(&[]);
         assert!(default.parity && default.mouse);
+        assert!(!default.reference_sensors);
         assert_eq!(default.brand, "ptop");
         assert_eq!(parse(&["--vtop-parity".into()]).brand, "vtop");
         let fixed = parse(&["--fix".into(), "--no-mouse".into()]);
@@ -204,6 +209,8 @@ mod tests {
         assert_eq!(fixed.brand, "ptop");
         assert!(parse(&["--fix".into(), "--vtop-parity".into()]).parity);
         assert!(!parse(&["--vtop-parity".into(), "--fix".into()]).parity);
+        assert!(parse(&["--fix".into(), "--vtop-parity".into()]).reference_sensors);
+        assert!(!parse(&["--vtop-parity".into(), "--fix".into()]).reference_sensors);
     }
     #[test]
     fn commander_errors_and_node_timer_coercion() {
