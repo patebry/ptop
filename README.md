@@ -11,7 +11,9 @@ ptop branding, a link-free footer, and manual updates; see
 [compatibility and measurement](#compatibility-and-measurement) for the tested
 coverage and remaining limits.
 
-Read the story: [Why I built ptop, a copy of vtop in Rust](https://www.patebryant.com/articles/ptop-rust-vtop).
+Read the story: [ptop, a vtop alternative in Rust](https://www.patebryant.com/articles/ptop-rust-vtop).
+Compare the options: [htop vs btop vs vtop vs ptop](https://www.patebryant.com/articles/htop-vs-btop-vtop-ptop),
+with features, local measurements, and a reproducible benchmark.
 
 ![ptop with dotted CPU and memory graphs and a process list](docs/assets/ptop.png)
 
@@ -113,9 +115,13 @@ or performance guarantee.
 name, footer and updater, including its npm/sudo behavior on the update key.
 Use normal ptop for the native package experience.
 
-Use the [benchmark instructions](docs/BENCHMARKING.md) to compare equal workloads
+Use the [benchmark instructions](docs/BENCHMARKING.md) to run controlled comparisons
 on your machine. CPU measurements include reaped sensor children; sampled RSS
 is the monitor's own memory, not total process-tree memory.
+
+[Four-tool measurements](https://github.com/patebry/ptop/blob/main/docs/PERFORMANCE-FOUR-TOOLS-2026-10-07.md)
+compare ptop 0.1.2, vtop, htop, and btop at a common requested UI refresh interval.
+Their features and internal sensor polling differ; this is not identical work.
 
 [Published 0.1.0 results](docs/PERFORMANCE-NPM-0.1.0.md) include three matched
 pairs, per-run variability, and the complete measurement data.
