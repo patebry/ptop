@@ -62,3 +62,31 @@ python3 -m unittest discover -s scripts -p 'test_*.py'
 ```
 
 Publish every successful final run, summarize per-tool medians and ranges, and retain unfavorable results. Small differences can reflect machine activity rather than a repeatable advantage. A macOS comparison is not evidence of Linux performance, and these resource measurements do not prove feature parity or identify a universal winner.
+
+## Comparing ptop collectors before and after an optimization
+
+Preserve the old executable before building the new one. This adapter compares
+normal ptop mode at both the default 300 ms UI interval and 1,000 ms. It pins PATH
+to macOS system tools because ptop deliberately retains its original collector
+when a custom `ps` is selected through PATH.
+
+```sh
+python3 scripts/benchmark_collectors.py \
+  --baseline /path/to/preserved-ptop \
+  --candidate /path/to/new-ptop \
+  --seconds 30 --pairs 4 --intervals 300 1000 --soak-seconds 180 \
+  > collectors.jsonl
+```
+
+The 16 paired runs alternate baseline/candidate and candidate/baseline at each
+interval, followed by a three-minute candidate run at 300 ms. Allow about eleven
+minutes. Build and test first; keep the measurement period free of other tests,
+compilation, profilers, and benchmark runs. No warmup samples are excluded.
+
+Each executable is hash-checked before and after every run. CPU and own-RSS
+accounting use the same measurement primitive described above. The longer run
+also reports timestamped numeric RSS samples and means for its first and last
+30 seconds; a difference alone does not establish a memory leak. Require exit
+status zero and a final `complete` record with all expected runs before drawing
+conclusions. The adapter does not pass `--vtop-parity`, which intentionally keeps
+the original reference collectors.

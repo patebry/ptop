@@ -112,8 +112,14 @@ provide separate evidence. This is finite test coverage, not a universal visual
 or performance guarantee.
 
 `--vtop-parity` is an explicit reference-testing mode. It restores the predecessor
-name, footer and updater, including its npm/sudo behavior on the update key.
+collectors, name, footer and updater, including its npm/sudo behavior on the update key.
 Use normal ptop for the native package experience.
+
+On macOS, normal ptop reads process RSS directly where permitted and asks the
+system `ps` only for protected processes. It preserves vtop's memory calculation
+and 200 ms sampling cadence; the process-list collector is unchanged. Incomplete
+native results fall back to the original collector. A custom `ps` on PATH also
+selects the original collector.
 
 Use the [benchmark instructions](docs/BENCHMARKING.md) to run controlled comparisons
 on your machine. CPU measurements include reaped sensor children; sampled RSS

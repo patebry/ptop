@@ -667,7 +667,16 @@ fn cpu_thread(samples: Arc<LiveSamples>) {
 }
 
 /// mem sensor thread (200ms cadence; CONTRACTS §C6).
-fn mem_thread(samples: Arc<LiveSamples>, parity: bool, errors: std::sync::mpsc::Sender<Key>) {
+fn mem_thread(
+    samples: Arc<LiveSamples>,
+    parity: bool,
+    reference_sensors: bool,
+    errors: std::sync::mpsc::Sender<Key>,
+) {
+    #[cfg(target_os = "macos")]
+    let native = !reference_sensors && system_ps_is_selected();
+    #[cfg(not(target_os = "macos"))]
+    let _ = reference_sensors;
     // vtop's memory sensor uses os-utils totalmem() = os.totalmem()/(1024*1024)
     // (MiB), not Node's byte count — the sensor's own math is (KB-sum / 1024) XOR 2 vs
     // that MiB total (CONTRACTS §C6). hw.memsize(bytes)/1048576 matches exactly.
@@ -684,8 +693,66 @@ fn mem_thread(samples: Arc<LiveSamples>, parity: bool, errors: std::sync::mpsc::
         0.0
     };
     scheduled_polls(samples, Duration::from_millis(200), None, move |samples| {
+        #[cfg(target_os = "macos")]
+        if native {
+            if let Ok(total_kb) = native_memory(&samples) {
+                let value = mac_memory_percent(total_kb as f64, totalmem, parity);
+                if value.is_finite() {
+                    *samples.mem.lock().unwrap() = Some(value as i64);
+                }
+                return;
+            }
+            // A partial census must never become an artificially low reading.
+            // Retry with the complete original collector, unless shutting down.
+            if samples.stopped.load(std::sync::atomic::Ordering::Relaxed) {
+                return;
+            }
+        }
         poll_memory(samples, totalmem, parity, &errors);
     });
+}
+
+#[cfg(target_os = "macos")]
+fn system_ps_is_selected() -> bool {
+    std::env::var_os("PATH").is_some_and(|path| system_ps_on_path(&path))
+}
+
+#[cfg(target_os = "macos")]
+fn system_ps_on_path(path: &std::ffi::OsStr) -> bool {
+    use std::os::unix::fs::PermissionsExt;
+    let selected = std::env::split_paths(path)
+        .map(|directory| directory.join("ps"))
+        .find(|candidate| {
+            candidate
+                .metadata()
+                .is_ok_and(|info| info.is_file() && info.permissions().mode() & 0o111 != 0)
+        });
+    selected.is_some_and(|candidate| {
+        candidate.canonicalize().ok().as_deref() == Some(std::path::Path::new("/bin/ps"))
+    })
+}
+
+#[cfg(target_os = "macos")]
+fn native_memory(samples: &LiveSamples) -> std::io::Result<u64> {
+    let snapshot = crate::macos_memory::sample()?;
+    if snapshot.denied_pids.is_empty() {
+        return Ok(snapshot.native_rss_kib);
+    }
+    let output = samples
+        .polls
+        .output(std::process::Command::new("/bin/ps").args(snapshot.fallback_args()?))?;
+    if !output.status.success() {
+        return Err(std::io::Error::other("targeted memory collector failed"));
+    }
+    snapshot.total_rss_kib(&output.stdout)
+}
+
+fn mac_memory_percent(total_kb: f64, totalmem: f64, parity: bool) -> f64 {
+    if parity {
+        crate::sensors::memory_mac_parity(total_kb, totalmem)
+    } else {
+        crate::sensors::memory_mac_fixed(total_kb, totalmem * 1_048_576.0)
+    }
 }
 
 fn poll_memory(
@@ -721,11 +788,7 @@ fn poll_memory(
                 value.is_finite().then_some(value)
             })
             .sum();
-        if parity {
-            crate::sensors::memory_mac_parity(total_kb, totalmem)
-        } else {
-            crate::sensors::memory_mac_fixed(total_kb, totalmem * 1_048_576.0)
-        }
+        mac_memory_percent(total_kb, totalmem, parity)
     } else {
         if !stdout.contains('\n') {
             let _ = errors.send(Key::SensorError(
@@ -1176,6 +1239,7 @@ pub fn run(opts: RunOpts) -> i32 {
     let th = Arc::new(crate::theme::resolve(&th_raw));
     let brand = opts.args.brand;
     let parity = opts.args.parity;
+    let reference_sensors = opts.args.reference_sensors;
     let interval = opts.args.update_interval.max(1) as u64;
 
     let samples = Arc::new(LiveSamples {
@@ -1238,7 +1302,7 @@ pub fn run(opts: RunOpts) -> i32 {
     std::thread::spawn(move || cpu_thread(samples_in));
     let samples_in = samples.clone();
     let error_tx = tx.clone();
-    std::thread::spawn(move || mem_thread(samples_in, parity, error_tx));
+    std::thread::spawn(move || mem_thread(samples_in, parity, reference_sensors, error_tx));
     let samples_in = samples.clone();
     std::thread::spawn(move || proc_thread(samples_in, wake_rx));
     let samples_in = samples.clone();

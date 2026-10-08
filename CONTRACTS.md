@@ -311,6 +311,13 @@ for line in lines:
   to 0..100. Its input denominator is bytes, not MiB.
 - Numeric-leading parsing strips from the first ASCII letter before parseInt;
   headers and nonnumeric rows are skipped.
+- The default macOS collector reads the same resident-memory ledger through
+  `PROC_PIDTASKINFO`, truncating each process to KiB before summing. PIDs denied
+  by libproc are collected with `/bin/ps -x -p <pids> -o pid=,rss=`. Missing
+  rows require a fresh census confirming departure; uncertain or malformed
+  results fall back to the complete original command. The 200 ms dispatch and
+  arithmetic above are unchanged. `--vtop-parity` uses the original collector;
+  a custom `ps` selected through PATH also retains the original command.
 
 ## C7. Chrome — header/footer/clock/loadavg
 

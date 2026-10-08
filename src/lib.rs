@@ -23,3 +23,6 @@ pub const NPM_PACKAGE: &str = "@patebryant/ptop";
 mod poll;
 
 mod signals;
+
+#[cfg(target_os = "macos")]
+mod macos_memory;
