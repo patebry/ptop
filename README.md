@@ -125,6 +125,10 @@ Use the [benchmark instructions](docs/BENCHMARKING.md) to run controlled compari
 on your machine. CPU measurements include reaped sensor children; sampled RSS
 is the monitor's own memory, not total process-tree memory.
 
+[The 0.1.3 collector evaluation](https://github.com/patebry/ptop/blob/905251fa8105a8aea29c0aa4f284ec9f041fcd6f/docs/PERFORMANCE-COLLECTORS-2026-10-07.md)
+measured 68–71% less total CPU than 0.1.2 on one Mac, at unchanged sensor cadences.
+The report includes all runs, memory warmup, compatibility checks, and limitations.
+
 [Four-tool measurements](https://github.com/patebry/ptop/blob/main/docs/PERFORMANCE-FOUR-TOOLS-2026-10-07.md)
 compare ptop 0.1.2, vtop, htop, and btop at a common requested UI refresh interval.
 Their features and internal sensor polling differ; this is not identical work.
