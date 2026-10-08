@@ -68,6 +68,7 @@ with tempfile.TemporaryDirectory(prefix='ptop-sort-timers-') as directory:
         # can miss their 200ms observation window; retry that measured scheduling
         # miss, but never count it as a passing timer observation.
         completed = False
+        timing_attempts = []
         for attempt in range(5):
             os.write(master, b'cg')
             drain(.35)
@@ -77,26 +78,37 @@ with tempfile.TemporaryDirectory(prefix='ptop-sort-timers-') as directory:
             start = time.monotonic()
             os.write(master, b'm')
             drain(.14)
-            if time.monotonic() - start >= .19:
+            spacing_elapsed = time.monotonic() - start
+            trace = dict(attempt=attempt + 1, spacing_ms=round(spacing_elapsed * 1000, 3))
+            timing_attempts.append(trace)
+            if spacing_elapsed >= .19:
+                trace['result'] = 'second_key_window_missed'
                 drain(.5)
                 os.write(master, b'g')
                 wait_selected(b'alpha', 1)
+                print('sort timer observation:', json.dumps(trace), flush=True)
                 continue
             second_sent = time.monotonic()
             os.write(master, b'c')
             first_reset = wait_selected(b'alpha', 1)
             assert first_reset, 'first sort callback did not reset selection'
+            trace['first_reset_after_second_key_ms'] = round((first_reset - second_sent) * 1000, 3)
             if first_reset - second_sent >= .15:
                 # Insufficient time remains to observe navigation before the
                 # second callback. This attempt proves nothing about that timer.
+                trace['result'] = 'first_reset_observed_too_late'
                 drain(.5)
+                print('sort timer observation:', json.dumps(trace), flush=True)
                 continue
             os.write(master, b'j')
             assert wait_selected(b'beta', 1), 'navigation between callbacks missing'
             assert wait_selected(b'alpha', 1), 'second independent sort callback was lost'
+            trace['result'] = 'both_independent_resets_observed'
+            print('sort timer observation:', json.dumps(trace), flush=True)
             completed = True
             break
-        assert completed, 'CI scheduling never provided an observable overlapping timer window'
+        assert completed, ('CI scheduling never provided an observable overlapping timer window; '
+                           + json.dumps(timing_attempts))
         os.write(master,b'q')
         drain(0.2)
         assert process.wait(timeout=2)==0
